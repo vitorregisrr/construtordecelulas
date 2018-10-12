@@ -96,7 +96,7 @@ var alien = {
             } else if (alien.grabing == 'organela') {
                 organelas.drop();
             } else {
-                if (!alien.montado) {
+                if (!alien.montado && !mobileAndTabletcheck()) {
                     alien.attack();
                 } else {
                     //naveEspacial.attack();

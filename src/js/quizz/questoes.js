@@ -57,7 +57,8 @@ var questoes = [
                 "Parede Celular",
                 "Membrana Plasmática",
                 0,
-                'procariontecapsula0'
+                'procariontecapsula0',
+                false
             ],
 
             [ //questao 2
@@ -68,7 +69,8 @@ var questoes = [
                 "Parede Celular",
                 "Membrana Plasmática",
                 0,
-                'procariontecapsula1'
+                'procariontecapsula1',
+                false
             ]
         ],
 
@@ -81,7 +83,8 @@ var questoes = [
                 "Transporte",
                 "Movimento",
                 1,
-                'procarionteparedecelular0'
+                'procarionteparedecelular0',
+                false
             ],
 
             [ //questao 2
@@ -92,7 +95,8 @@ var questoes = [
                 "Parede Celular",
                 "Membrana Plasmática",
                 3,
-                'procarionteparedecelular1'
+                'procarionteparedecelular1',
+                false
             ]
         ],
 
@@ -106,7 +110,8 @@ var questoes = [
                 "Parede Celular",
                 "Membrana Plasmática",
                 4,
-                'procariontemembranaplasmatica0'
+                'procariontemembranaplasmatica0',
+                false
             ],
 
             [ //questao 2
@@ -117,7 +122,8 @@ var questoes = [
                 "Difusão simples",
                 "Difusão facilitada",
                 0,
-                'procariontemembranaplasmatica1'
+                'procariontemembranaplasmatica1',
+                false
             ]
         ],
 
@@ -130,7 +136,8 @@ var questoes = [
                 "Mitocôndrias, retículo endoplasmático, complexo golgiese e lisossomos",
                 "Centríolos, peroxissomos, lisossomos e retículo endoplasmático",
                 1,
-                'procariontecitoplasma0'
+                'procariontecitoplasma0',
+                false
             ],
 
             [ //questao 2
@@ -141,7 +148,8 @@ var questoes = [
                 "Parede celular",
                 "Membrana plasmática",
                 1,
-                'procariontecitoplasma1'
+                'procariontecitoplasma1',
+                false
             ]
         ],
 
@@ -154,7 +162,8 @@ var questoes = [
                 "Parede celular",
                 "Membrana plasmática",
                 2,
-                'procarionteribossomo0'
+                'procarionteribossomo0',
+                false
             ],
 
             [ //questao 2
@@ -165,7 +174,8 @@ var questoes = [
                 "Nucleoide",
                 "Cápsula",
                 2,
-                'procarionteribossomo1'
+                'procarionteribossomo1',
+                false
             ]
         ],
 
@@ -178,7 +188,8 @@ var questoes = [
                 "Centríolo",
                 "Núcleo",
                 2,
-                'procariontenucleoide0'
+                'procariontenucleoide0',
+                false
             ],
 
             [ //questao 2
@@ -189,7 +200,8 @@ var questoes = [
                 "o nucleoide",
                 "o citoplasma",
                 3,
-                'procariontenucleoide1'
+                'procariontenucleoide1',
+                false
             ]
         ],
 
@@ -202,7 +214,8 @@ var questoes = [
                 "Filamentos",
                 "Pseudópode",
                 1,
-                'procarionteflagelo0'
+                'procarionteflagelo0',
+                false
             ],
 
             [ //questao 2
@@ -213,7 +226,8 @@ var questoes = [
                 "Secreção de substâncias",
                 "Transporte de substâncias",
                 2,
-                'procarionteflagelo1'
+                'procarionteflagelo1',
+                false
             ]
         ],
 
@@ -230,7 +244,8 @@ var questoes = [
                 "Fagocitose",
                 "Clasmocitose",
                 3,
-                'animalmembranaplasmatica0'
+                'animalmembranaplasmatica0',
+                false
             ],
 
             [ //questao 2
@@ -241,7 +256,8 @@ var questoes = [
                 "Os lipídios – os carboidratos – as proteínas.",
                 "As proteínas – os carboidratos – os lipídios.",
                 0,
-                'animalmembranaplasmatica1'
+                'animalmembranaplasmatica1',
+                false
             ]
         ],
 
@@ -254,7 +270,8 @@ var questoes = [
                 "peroxissomo e citoesqueleto",
                 "DNA e retículo endoplasmático",
                 2,
-                'animalcitoplasma0'
+                'animalcitoplasma0',
+                false
             ],
 
             [ //questao 2
@@ -265,7 +282,8 @@ var questoes = [
                 "nucleoide e mitocôndria",
                 "vacúolo e peroxissomos.",
                 0,
-                'animalcitoplasma1'
+                'animalcitoplasma1',
+                false
             ]
         ],
 
@@ -278,7 +296,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 0,
-                'animalmitocondria0'
+                'animalmitocondria0',
+                false
             ],
 
             [ //questao 2
@@ -289,7 +308,8 @@ var questoes = [
                 "da sua avó paterna",
                 "da sua avó materna",
                 4,
-                'animalmitocondria1'
+                'animalmitocondria1',
+                false
             ]
         ],
 
@@ -302,7 +322,8 @@ var questoes = [
                 "citoesqueleto",
                 "complexo de Golgi",
                 4,
-                'animalcomplexodegolgi0'
+                'animalcomplexodegolgi0',
+                false
             ],
 
             [ //questao 2
@@ -313,7 +334,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 3,
-                'animalcomplexodegolgi1'
+                'animalcomplexodegolgi1',
+                false
             ]
         ],
 
@@ -326,7 +348,8 @@ var questoes = [
                 "complexo de Golgi",
                 "retículo endoplasmático liso",
                 4,
-                'animalreticuloendoplasmatico0'
+                'animalreticuloendoplasmatico0',
+                false
             ],
 
             [ //questao 2
@@ -337,7 +360,8 @@ var questoes = [
                 "transportar proteínas",
                 "sintetizar carboidratos",
                 3,
-                'animalreticuloendoplasmatico1'
+                'animalreticuloendoplasmatico1',
+                false
             ]
         ],
 
@@ -350,7 +374,8 @@ var questoes = [
                 "digestão celular",
                 "secreção celular",
                 3,
-                'animallisossomo0'
+                'animallisossomo0',
+                false
             ],
 
             [ //questao 2
@@ -361,7 +386,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 3,
-                'animallisossomo1'
+                'animallisossomo1',
+                false
             ]
         ],
 
@@ -374,7 +400,8 @@ var questoes = [
                 "Maturar proteínas",
                 "Excretar proteínas",
                 0,
-                'animalribossomo0'
+                'animalribossomo0',
+                false
             ],
 
             [ //questao 2
@@ -385,7 +412,8 @@ var questoes = [
                 "lisossomos",
                 "centríolos",
                 2,
-                'animalribossomo1'
+                'animalribossomo1',
+                false
             ]
         ],
 
@@ -398,7 +426,8 @@ var questoes = [
                 "Centríolo",
                 "Flagelo",
                 0,
-                'animalcitoesqueleto0'
+                'animalcitoesqueleto0',
+                false
             ],
 
             [ //questao 2
@@ -409,7 +438,8 @@ var questoes = [
                 "Excretar resíduos",
                 "Sintetizar proteínas",
                 2,
-                'animalcitoesqueleto1'
+                'animalcitoesqueleto1',
+                false
             ]
         ],
 
@@ -422,7 +452,8 @@ var questoes = [
                 "Ribossomos",
                 "Peroxissomos",
                 0,
-                'animalcentriolos0'
+                'animalcentriolos0',
+                false
             ],
 
             [ //questao 2
@@ -433,7 +464,8 @@ var questoes = [
                 "Produção de proteínas",
                 "Maturação de proteínas",
                 0,
-                'animalcentriolos1'
+                'animalcentriolos1',
+                false
             ]
         ],
 
@@ -446,7 +478,8 @@ var questoes = [
                 "ribossomo",
                 "peroxissomo",
                 4,
-                'animalperoxissomo0'
+                'animalperoxissomo0',
+                false
             ],
 
             [ //questao 2 ``````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````
@@ -457,7 +490,8 @@ var questoes = [
                 "ribossomo",
                 "peroxissomo",
                 4,
-                'animalperoxissomo1'
+                'animalperoxissomo1',
+                false
             ]
         ],
 
@@ -470,7 +504,8 @@ var questoes = [
                 "o Citoplasma",
                 "a membrana plasmática",
                 0,
-                'animalperoxissomo0'
+                'animalperoxissomo0',
+                false
             ],
 
             [ //questao 2
@@ -481,7 +516,8 @@ var questoes = [
                 "Procariontes",
                 "Heterotróficas",
                 1,
-                'animalperoxissomo1'
+                'animalperoxissomo1',
+                false
             ]
         ],
     ],
@@ -498,7 +534,8 @@ var questoes = [
                 "bicamada lipídica",
                 "proteínas de membrana",
                 2,
-                'vegetalmembranaplasmatica0'
+                'vegetalmembranaplasmatica0',
+                false
             ],
 
             [ //questao 2
@@ -509,7 +546,8 @@ var questoes = [
                 "Exocitose",
                 "Osmose",
                 0,
-                'vegetalmembranaplasmatica1'
+                'vegetalmembranaplasmatica1',
+                false
             ]
         ],
 
@@ -522,7 +560,8 @@ var questoes = [
                 "Mitocôndria",
                 "Peroxissomo",
                 2,
-                'vegetalcloropasto0'
+                'vegetalcloropasto0',
+                false
             ],
 
             [ //questao 2
@@ -533,7 +572,8 @@ var questoes = [
                 "Fotossíntese",
                 "Transpiração",
                 3,
-                'vegetalcloropasto1'
+                'vegetalcloropasto1',
+                false
             ]
         ],
 
@@ -546,7 +586,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 0,
-                'vegetalvacuolo0'
+                'vegetalvacuolo0',
+                false
             ],
 
             [ //questao 2
@@ -557,7 +598,8 @@ var questoes = [
                 "amido",
                 "glicogênio",
                 2,
-                'vegetalvacuolo1'
+                'vegetalvacuolo1',
+                false
             ]
         ],
 
@@ -570,7 +612,8 @@ var questoes = [
                 "Cápsula",
                 "Vacúolo",
                 1,
-                'vegetalparedecelular0'
+                'vegetalparedecelular0',
+                false
             ],
 
             [ //questao 2
@@ -581,7 +624,8 @@ var questoes = [
                 "celulose",
                 "glicogênio",
                 3,
-                'vegetalparedecelular1'
+                'vegetalparedecelular1',
+                false
             ]
         ],
 
@@ -594,7 +638,8 @@ var questoes = [
                 "Ribossomos",
                 "Núcleo",
                 0,
-                'vegetalcitoplasma0'
+                'vegetalcitoplasma0',
+                false
             ],
 
             [ //questao 2
@@ -605,7 +650,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 1,
-                'vegetalcitoplasma1'
+                'vegetalcitoplasma1',
+                false
             ]
         ],
 
@@ -618,7 +664,8 @@ var questoes = [
                 "maturação de substâncias",
                 "produção de substâncias",
                 0,
-                'vegetalreticuloendoplasmatico0'
+                'vegetalreticuloendoplasmatico0',
+                false
             ],
 
             [ //questao 2
@@ -629,7 +676,8 @@ var questoes = [
                 "peroxissomos",
                 "microtúbulos",
                 1,
-                'vegetalreticuloendoplasmatico1'
+                'vegetalreticuloendoplasmatico1',
+                false
             ]
         ],
 
@@ -642,7 +690,8 @@ var questoes = [
                 "excreção celular",
                 "secreção celular",
                 4,
-                'vegetalcomplexodegolgi0'
+                'vegetalcomplexodegolgi0',
+                false
             ],
 
             [ //questao 2
@@ -653,7 +702,8 @@ var questoes = [
                 "D",
                 "E",
                 3,
-                'vegetalcomplexodegolgi1'
+                'vegetalcomplexodegolgi1',
+                false
             ]
         ],
 
@@ -666,7 +716,8 @@ var questoes = [
                 "Possuem a catalase que transforma H2O2 em H2O e O2",
                 "Possuem um tipo especial encontrado nas plantas, o glioxissomo",
                 1,
-                'vegetalperoxissomo0'
+                'vegetalperoxissomo0',
+                false
             ],
 
             [ //questao 2
@@ -677,7 +728,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 2,
-                'vegetalperoxissomo1'
+                'vegetalperoxissomo1',
+                false
             ]
         ],
 
@@ -690,7 +742,8 @@ var questoes = [
                 "Promover o deslocamento de materiais no citoplasma",
                 "Movimentar cromossomos durantes as divisões celulares",
                 2,
-                'vegetalcitoesqueleto0'
+                'vegetalcitoesqueleto0',
+                false
             ],
 
             [ //questao 2
@@ -701,7 +754,8 @@ var questoes = [
                 "Filamentos de quitina",
                 "Filamentos de actina",
                 4,
-                'vegetalcitoesqueleto1'
+                'vegetalcitoesqueleto1',
+                false
             ]
         ],
         
@@ -714,7 +768,8 @@ var questoes = [
                 "o ribossomo e o peroxissomo",
                 "o núcleo e o citoesqueleto",
                 2,
-                'vegetalmitocondria0'
+                'vegetalmitocondria0',
+                false
             ],
 
             [ //questao 2
@@ -725,7 +780,8 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 2,
-                'vegetalmitocondria1'
+                'vegetalmitocondria1',
+                false
             ]
         ],
 
@@ -739,7 +795,8 @@ var questoes = [
                 "na mitocôndria e no citoesqueleto",
                 "no vacúolo e no peroxissomo",
                 0,
-                'vegetalribossomos0'
+                'vegetalribossomos0',
+                false
             ],
 
             [ //questao 2
@@ -750,7 +807,8 @@ var questoes = [
                 "no plasmídeo; no citoesqueleto",
                 "na cápsula; no cloroplasto",
                 1,
-                'vegetalribossomos1'
+                'vegetalribossomos1',
+                false
             ]
         ],
 
@@ -763,7 +821,8 @@ var questoes = [
                 "promover a digestão celular",
                 "realizar a secreção celular",
                 1,
-                'vegetalnucleo0'
+                'vegetalnucleo0',
+                false
             ],
 
             [ //questao 2
@@ -774,7 +833,8 @@ var questoes = [
                 "o ribossomo",
                 "o peroxissomo",
                 1,
-                'vegetalnucleo1'
+                'vegetalnucleo1',
+                false
             ]
         ],
 

@@ -1,4 +1,6 @@
+var numeroAcertos;
 function createQuizzModal() {
+    numeroAcertos = 0;
     reg.modal.createModal({
         type: "modalQuizz",
         includeBackground: false,
@@ -173,20 +175,30 @@ function createQuizzModal() {
 }
 
 var controleQuestao;
-
 function novaQuestao() {
-
     //desmarca todas as caixinhas
     for(x = 2; x <= 6; x++){
         reg.modal.updateModalValue(0, 'modalQuizz', x);
     }
 
     alien.canAttack = false;
+
     var celulaAtual = levelNumber -1,
         numeroOrganelas =  questoes[celulaAtual].length -1,
         organelaAleatoria = game.rnd.integerInRange(0, numeroOrganelas),
         questaoAleatoria = game.rnd.integerInRange(0, 1),
         questaoAtual = questoes[celulaAtual][organelaAleatoria][questaoAleatoria];
+
+    var numeroQuestoes = numeroOrganelas * 2;
+    if(numeroAcertos <= numeroQuestoes){
+        while(questaoAtual[8] == true){
+            organelaAleatoria = game.rnd.integerInRange(0, numeroOrganelas),
+            questaoAleatoria = game.rnd.integerInRange(0, 1),
+            questaoAtual = questoes[celulaAtual][organelaAleatoria][questaoAleatoria];
+        }
+    }
+
+    console.log('numero questoes:' + numeroQuestoes + 'numero acertos:' +numeroAcertos);
 
     controleQuestao = {
         titulo: questaoAtual[0],
@@ -197,6 +209,8 @@ function novaQuestao() {
         alternativa5: questaoAtual[5],
         certa: questaoAtual[6],
         locucao: questaoAtual[7],
+        jaacertou: questaoAtual[8],
+        index: questaoAtual,
         marcada: null,
     }
 
@@ -236,6 +250,8 @@ function questaoEnviada(){
     if(controleQuestao.marcada == controleQuestao.certa){
         energia.gen();
         reator.painel.frame = 2;
+        controleQuestao.index[8] = true;
+        numeroAcertos++;
     }else{
         reator.painel.frame = 1;
     }
