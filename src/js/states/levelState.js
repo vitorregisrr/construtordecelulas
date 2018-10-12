@@ -88,8 +88,6 @@ function criarLevelState() {
 	btnComoJogar.anchor.setTo(0.5, 0.5);
 	btnComoJogar.scale.setTo(0.8, 0.8);
 	game.world.setBounds(0, 0, 800, 600);
-	
-	showQuadrinho(1);
 }
 
 function atualizarLevelState() {

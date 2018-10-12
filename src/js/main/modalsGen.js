@@ -31,7 +31,6 @@ function createModals() {
         type: "quadrinhosModal",
         includeBackground: true,
         modalCloseOnInput: false,
-        animation: 'fade',
         fixedToCamera: true,
         itemsArr: [{
                 type: "image",
@@ -481,6 +480,7 @@ function showSobreModal() {
 }
 
 function showQuadrinho(id) {
+    game.paused = true;
     reg.modal.showModal("quadrinhosModal");
 }
 

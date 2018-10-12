@@ -50,6 +50,10 @@ function gameOver() {
     reg.modal.updateModalValue(organelas.acertos, 'gameOverModal', 1);
     reg.modal.updateModalValue(organelas.erros, 'gameOverModal', 2);
     showGameOverModal();
+
+    setTimeout(() => {
+        showQuadrinho(4);
+    }, 20);
 }
 
 function levelSuccess() {
@@ -86,6 +90,10 @@ function levelSuccess() {
     reg.modal.updateModalValue(timeArrayProvisorio[0]+":"+timeArrayProvisorio[1]+":"+timeArrayProvisorio[2], 'gameSucessModal', 7);
     reg.modal.updateModalValue(starsSpritesheetIndex, 'gameSucessModal', 5);
     showGameSucessModal();
+
+    setTimeout(() => {
+        showQuadrinho(3);
+    }, 20);
 }
 
 function mobileAndTabletcheck() {

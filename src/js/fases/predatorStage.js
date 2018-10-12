@@ -13,6 +13,9 @@ function criarPredatorState() {
     locucao.gen();
     sounds.gen();
     showQuadrinho(2);
+    setTimeout(() => {
+        showQuadrinho(2);
+    }, 20);
 
     game.physics.startSystem(Phaser.Physics.ARCADE);
     cursors = game.input.keyboard.createCursorKeys();

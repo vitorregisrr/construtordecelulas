@@ -11,6 +11,9 @@ function criarState1() {
     locucao.gen();
     sounds.gen();
     celulaAtual = celulaProcarionte;
+    setTimeout(() => {
+        showQuadrinho(1);
+    }, 20);
 
     levelNumber = 1;
     game.physics.startSystem(Phaser.Physics.ARCADE);

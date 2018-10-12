@@ -1,30 +1,31 @@
 var startAnim = function(){
-    topStatistics.alpha = 0;
     naveEspacial.montar();
     alien.canMove = false;
-    game.add.tween(game.camera.scale).to({
-        x: 0.9,
-        y: 0.9,
-    }, 1200, Phaser.Easing.Linear.None, true);
-
-    setTimeout(() => {
+    game.time.events.add(300, function(){
+        topStatistics.alpha = 0;
         game.add.tween(game.camera.scale).to({
-            x: 1,
-            y: 1,
-        }, 2000, Phaser.Easing.Linear.None, true);
-
-        setTimeout(() => {
-            game.add.tween(alien.element).to({
-                alpha: 1,
-            }, 1500, Phaser.Easing.Linear.None, true);
-
-            game.add.tween(topStatistics).to({
-                alpha: 1,
+            x: 0.9,
+            y: 0.9,
+        }, 1200, Phaser.Easing.Linear.None, true);
+    
+        game.time.events.add(4000, function(){
+            game.add.tween(game.camera.scale).to({
+                x: 1,
+                y: 1,
             }, 2000, Phaser.Easing.Linear.None, true);
-
-            alien.canAttack = true;
-            alien.canMove = true;
-        }, 1500);
-    }, 4000);
-
+    
+            game.time.events.add(1500, function(){
+                game.add.tween(alien.element).to({
+                    alpha: 1,
+                }, 1500, Phaser.Easing.Linear.None, true);
+    
+                game.add.tween(topStatistics).to({
+                    alpha: 1,
+                }, 2000, Phaser.Easing.Linear.None, true);
+    
+                alien.canAttack = true;
+                alien.canMove = true;
+            }, this).autoDestroy = true;
+        }, this).autoDestroy = true;
+    }, this).autoDestroy = true;
 }
