@@ -37,6 +37,7 @@ var energia = {
         sounds.play('reator');
 
         alien.element.bringToTop();
+        gameUiBringtoTop();
     },
 
     grab: function(e){
