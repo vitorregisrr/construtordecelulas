@@ -110,7 +110,7 @@ function gameUI() {
     moveDownBtn.onInputUp.add(function() { moveDownBtn.isDown = false;}, this);
     joystick.addChild(moveDownBtn);
 
-    attackBtn = game.add.button(-700, -40, 'btnAttack', function(){ alien.attack();}, this);
+    attackBtn = game.add.button(-screenWidth + 150, -40, 'btnAttack', function(){ alien.attack();}, this);
     attackBtn.onInputDown.add(function() { attackBtn.isDown = true;}, this);
     attackBtn.onInputUp.add(function() { attackBtn.isDown = false;}, this);
     attackBtn.scale.setTo(1.3,1.3);
