@@ -21,13 +21,13 @@ var gerador = {
         this.body.addChild(receptor.body);
 
         this.gerarBtn = game.add.button(1238, 525 + 392, 'gerarBtn', function(){
-            if(Math.abs( (gerador.gerarBtn.x + 100) - alien.element.x) < 420 && Math.abs((gerador.gerarBtn.y + 100) - alien.element.y) < 150){
+            if(Math.abs( (gerador.gerarBtn.x + 100) - alien.element.x) < 420 && Math.abs((gerador.gerarBtn.y + 100) - alien.element.y) < 200){
                 gerarOrganela();
             }
         }, this);
         if (mobileAndTabletcheck()) {
             this.gerarBtn.scale.setTo(1.8,1.8);
-            this.gerarBtn.x = 1220;
+            this.gerarBtn.x = 1215;
             this.gerarBtn.y = 525 + 370;
           }
 

@@ -20,7 +20,6 @@ function precarregarPreload() {
 
     slider = new phaseSlider(game); 
     
-    game.load.bitmapFont('gameovercre1', 'assets/gameovercre1');
     //videos
     game.load.video('libras1', 'assets/videoslibras/libras1.mp4');
     //game.load.video('libras2', 'assets/videoslibras/libras2.mp4');
@@ -30,12 +29,10 @@ function precarregarPreload() {
     game.load.spritesheet('moveRight','assets/ui/moveRight.png',65, 59);
     game.load.spritesheet('moveUp','assets/ui/moveUp.png',65, 59);
     game.load.spritesheet('moveDown','assets/ui/moveDown.png',65, 59);
-    game.load.spritesheet('btnAttack','assets/ui/btnAttack.png',65, 59);
-
+   
     //UI elements
     game.load.spritesheet('btnPlay', 'assets/ui/btnPlay.png',200, 199, 2);
     game.load.image('btnSettings', 'assets/ui/btnSettings.png');
-    game.load.image('btnFacebook', 'assets/ui/btnFacebook.png');
     game.load.image('hearBtn', 'assets/ui/hearBtn.png');
     game.load.image('btnSettings', 'assets/ui/btnSettings.png');
     game.load.image('btnFacebook', 'assets/ui/btnFacebook.png');
@@ -46,11 +43,9 @@ function precarregarPreload() {
     game.load.image('btnRight', 'assets/ui/btnRight.png');
     game.load.image('btnPause', 'assets/ui/btnPause.png');
     game.load.image('btnClose', 'assets/ui/btnClose.png');
-    game.load.image('btnEscutar', 'assets/ui/btnEscutar.png');
     game.load.image('topStatistics', 'assets/ui/topStatistics.png');
     game.load.image('stateProgressBar', 'assets/ui/stateProgressBar.png');
     game.load.spritesheet("levels", "assets/ui/levels.png", 100, 70);
-    game.load.spritesheet("level_arrows", "assets/ui/level_arrows.png", 48, 48);
     game.load.spritesheet("starsSpritesheet", "assets/ui/starsSpritesheet.png", 183, 77);
     game.load.image("pausedModal", "assets/ui/pausedModal.png");
     game.load.image("configModal", "assets/ui/configModal.png");
@@ -69,13 +64,8 @@ function precarregarPreload() {
     game.load.spritesheet("onoffscifi", "assets/ui/onoffscifi.png",40,33);
     game.load.image("enviarscifiBtn", "assets/ui/enviarscifiBtn.png");
 
-
-    game.load.image("librasBtn", "assets/ui/librasBtn.png");
     game.load.image("iBtn", "assets/ui/iBtn.png");
-    game.load.image("tutorial1", "assets/ui/tutorial1.png");
-    game.load.image("tutorial2", "assets/ui/tutorial2.png");
-    game.load.image("tutorial3", "assets/ui/tutorial3.png");
-
+    
     game.load.spritesheet("switch", "assets/ui/switch.png", 75, 34, 2);
 
     //plataformas
@@ -216,8 +206,8 @@ function precarregarPreload() {
     game.load.spritesheet("naveEspacialPredator", "assets/plataformas/naveEspacialPredator.png",466,415,3);
 
     //celulas
-    game.load.image('celulaProcarionte','assets/celulas/celulaprocarionte.png');
-    game.load.image('celulaAnimal','assets/celulas/celulaanimal.png');
+    game.load.image('celulaProcarionte','assets/celulas/celulaProcarionte.png');
+    game.load.image('celulaAnimal','assets/celulas/celulAnimal.png');
     game.load.image('celulaVegetal','assets/celulas/celulavegetal.png');
     game.load.image('placeholder','assets/celulas/placeholder.png');
 
@@ -255,6 +245,9 @@ function precarregarPreload() {
     game.load.image('organelavegetal7','assets/gerador/organelavegetal7.png');
     game.load.image('organelavegetal8','assets/gerador/organelavegetal8.png');
     game.load.image('organelavegetal9','assets/gerador/organelavegetal9.png');
+
+    //quadrinhos
+    game.load.image('quadrinho1','assets/quadrinhos/quadrinho1.png');
 
     //blocos
     game.load.spritesheet('blocoorganelaprocarionte0','assets/gerador/blocoorganelaprocarionte0.png', 91, 30, 3);
