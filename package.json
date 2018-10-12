@@ -1,0 +1,14 @@
+{
+  "name": "",
+  "version": "",
+  "description": "Incubadora Alien é um jogo para o ensino de Citologia. ",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-audiosprite": "^1.0.6",
+    "gulp-fluent-ffmpeg": "^1.0.2",
+    "gulp-imagemin": "^4.1.0"
+  }
+}

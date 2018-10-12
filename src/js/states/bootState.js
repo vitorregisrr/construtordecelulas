@@ -1,0 +1,15 @@
+var bootState = { create:criarBoot, preload: precarregarBoot}
+
+function precarregarBoot() {
+    //UI elements
+    game.load.image('bgblur','assets/backgrounds/bgblur.png');
+    game.load.image('logo', 'assets/ui/logo.png');
+    game.load.image('preloadBarBg', 'assets/ui/preloadBarBg.png');
+    game.load.image('preloadBar', 'assets/ui/preloadBar.png');
+    game.load.image('metalBg', 'assets/backgrounds/bgMetal.png');
+
+}
+
+function criarBoot(){
+    game.state.start('preloadState');
+}

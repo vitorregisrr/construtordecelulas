@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- metas-->
+    <meta charset="utf-8" />
+    <title>Incubadora Alien</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- //metas-->
+    <link rel="stylesheet" href="assets/komikax.css">
+    <link rel="stylesheet" href="assets/rajdhani.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url("assets/backgrounds/bgblur.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Rajdhani';
+        }
+
+        #game {
+            margin: 0;
+            padding: 0;
+            margin-top: 0px;
+
+        }
+
+        #turn {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background-color: white;
+            background-image: url('playportrait.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: none;
+        }
+
+        h1.fontloader {
+            font-family: 'Rajdhani';
+        }
+
+        span.fontloader {
+            font-family: 'Komika'
+        }
+
+        @media screen and (orientation:portrait) {
+            #turn{
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="turn"><h1>Gire a tela para modo landscape!</h1></div>
+    <h1 hidden class="fontloader">O Construtor de <span class="fontloader">Células</span></h1>
+    <div id="game">
+    </div>
+</body>
+
+</html>
+
+<!-- phaser lib-->
+<script src='js/phaser.min.js'></script>
+<script src="js/libs/modalLib.js"></script>
+<script src="js/libs/tooltipLib.js"></script>
+<script src="js/libs/phase-slide.js"></script>
+<!-- phaser-->
+
+<!-- game logic-->
+<script src="js/acessibilidade/configAcessibilidade.js"></script>
+<script src="js/acessibilidade/locucao.js"></script>
+<script src="js/acessibilidade/sounds.js"></script>
+
+<script src="js/states/bootState.js"></script>
+<script src="js/states/preloadState.js"></script>
+<script src="js/states/startState.js"></script>
+<script src="js/states/levelState.js"></script>
+
+<script src="js/fases/gameStage1.js"></script>
+<script src="js/fases/gameStage2.js"></script>
+<script src="js/fases/gameStage3.js"></script>
+<script src="js/fases/predatorStage.js"></script>
+
+<script src="js/maquinas/energia.js"></script>
+<script src="js/maquinas/gerador.js"></script>
+<script src="js/maquinas/naveEspacial.js"></script>
+<script src="js/maquinas/organelas.js"></script>
+<script src="js/maquinas/portal.js"></script>
+<script src="js/maquinas/reator.js"></script>
+<script src="js/maquinas/receptor.js"></script>
+<script src="js/maquinas/incubadora.js"></script>
+
+<script src="js/celulas/celulaAnimal.js"></script>
+<script src="js/celulas/celulaProcarionte.js"></script>
+<script src="js/celulas/celulaVegetal.js"></script>
+
+<script src="js/personagens/alien.js"></script>
+<script src="js/personagens/predator.js"></script>
+
+<script src="js/quizz/modalQuizz.js"></script>
+<script src="js/quizz/questoes.js"></script>
+
+<script src="js/main/pointerCheck.js"></script>
+<script src="js/main/gameUI.js"></script>
+<script src="js/main/plataformasGen.js"></script>
+<script src="js/main/modalsGen.js"></script>
+<script src="js/main/gameLoadStates.js"></script>
+<script src="js/main/startAnim.js"></script>
+<script src="js/main/dialog.js"></script>
+<script src="js/main/predatorCutscene.js"></script>
+<!-- //game logic-->
