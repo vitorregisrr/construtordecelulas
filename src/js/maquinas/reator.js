@@ -27,7 +27,6 @@ var reator = {
             }
         }, this);
         this.body.addChild(this.painel);
-        gameUiBringtoTop();
     },
 
     gerarEnergia: function(){
