@@ -22,6 +22,7 @@ function precarregarPreload() {
 
     //move btns
     game.load.spritesheet('moveLeft','assets/ui/moveLeft.png',65, 59);
+    game.load.spritesheet('btnAttack','assets/ui/btnAttack.png',65, 59);
     game.load.spritesheet('moveRight','assets/ui/moveRight.png',65, 59);
     game.load.spritesheet('moveUp','assets/ui/moveUp.png',65, 59);
     game.load.spritesheet('moveDown','assets/ui/moveDown.png',65, 59);

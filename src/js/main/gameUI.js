@@ -4,7 +4,7 @@ var timeArrayProvisorio = [
     [00],
     [00]
 ];
-var timeLoop, joystick, moveLeft, moveUp, moveDown, moveRight;
+var timeLoop, joystick, moveLeft, moveUp, moveDown, moveRight, attackBtn;
 
 function gameUI() {
     topStatistics = game.add.sprite(centerX, 0, 'topStatistics');
@@ -109,6 +109,12 @@ function gameUI() {
     moveDownBtn.onInputDown.add(function() { moveDownBtn.isDown = true;}, this);
     moveDownBtn.onInputUp.add(function() { moveDownBtn.isDown = false;}, this);
     joystick.addChild(moveDownBtn);
+
+    attackBtn = game.add.button(-700, -40, 'btnAttack', function(){ alien.attack();}, this);
+    attackBtn.onInputDown.add(function() { attackBtn.isDown = true;}, this);
+    attackBtn.onInputUp.add(function() { attackBtn.isDown = false;}, this);
+    attackBtn.scale.setTo(1.3,1.3);
+    joystick.addChild(attackBtn);
     
     sounds.play('ambiente');
     soundLoop = setInterval(function () {

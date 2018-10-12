@@ -55,6 +55,11 @@ var alien = {
                 } else {
                     this.element.bullet.body.velocity.x = -400;
                 }
+
+                attackBtn.frame = 1;
+                setTimeout(() => {
+                    attackBtn.frame = 0;
+                }, 400);
             }
         }
     },
@@ -90,7 +95,7 @@ var alien = {
     },
 
     move: function () {
-        if (game.input.activePointer.isDown && !moveLeftBtn.isDown && !moveUpBtn.isDown && !moveDownBtn.isDown && !moveRightBtn.isDown) {
+        if (game.input.activePointer.isDown && !moveLeftBtn.isDown && !attackBtn.isDown && !moveUpBtn.isDown && !moveDownBtn.isDown && !moveRightBtn.isDown) {
             if (alien.grabing == 'energia') {
                 energia.drop();
             } else if (alien.grabing == 'organela') {
