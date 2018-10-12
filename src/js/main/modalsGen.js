@@ -26,6 +26,31 @@ function createModals() {
             }
         ]
     });
+    
+    reg.modal.createModal({
+        type: "quadrinhosModal",
+        includeBackground: true,
+        modalCloseOnInput: false,
+        animation: 'fade',
+        fixedToCamera: true,
+        itemsArr: [{
+                type: "image",
+                content: "quadrinho1",
+                offsetY: 0,
+            },
+            {
+                type: "image",
+                content: "prosseguirBtn",
+                offsetY: 265,
+                offsetX: 292,
+                contentScale: 0.8,
+                callback: function () {
+                    reg.modal.hideModal("quadrinhosModal");
+                    game.paused = false;
+                }
+            }
+        ]
+    });
 
     reg.modal.createModal({
         type: "comoJogarModal",
@@ -197,7 +222,7 @@ function createModals() {
             },
             {
                 type: "text",
-                content: "VOLTAR",
+                content: "INSTRUÇÕES",
                 fontSize: 22,
                 fontFamily: "Rajdhani",
                 color: "0x7ed2f6",
@@ -206,8 +231,7 @@ function createModals() {
                 offsetY: -90,
                 offsetX: 0,
                 callback: function () {
-                    game.paused = false;
-                    reg.modal.hideModal("pausedModal");
+                   showComoJogarModal();
                 }
             },
             {
@@ -406,13 +430,6 @@ function showGameSucessModal() {
     reg.modal.showModal("gameSucessModal");
 }
 
-function showLibrasModal() {
-    reg.modal.showModal("librasModal");
-}
-
-function showInfoModal() {
-    reg.modal.showModal("infoModal");
-}
 
 function showConfigModal() {
     reg.modal.showModal("configModal");
@@ -463,13 +480,16 @@ function showSobreModal() {
     sobreBg.alpha = 0;
 }
 
+function showQuadrinho(id) {
+    reg.modal.showModal("quadrinhosModal");
+}
+
 function showComoJogarModal() {
     reg.modal.showModal("comoJogarModal");
     reg.modal.updateModalValue(0, 'comoJogarModal', 7);
     reg.modal.updateModalValue(1, 'comoJogarModal', 4);
     reg.modal.updateModalValue(0, 'comoJogarModal', 5);
     reg.modal.updateModalValue(0, 'comoJogarModal', 6);
-    
 }
 
 function countDown(fn, endFn) {

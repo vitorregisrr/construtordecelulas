@@ -64,10 +64,6 @@ function criarState1() {
     
     //animacao do zoom 
     startAnim();
-
-    var quadrinho = game.add.sprite(centerX, 200, 'quadrinho1');
-    quadrinho.anchor.setTo(0.5, 0);
-    quadrinho.fixedToCamera = true;
 }
 
 function atualizarState1() {

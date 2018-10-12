@@ -19,10 +19,6 @@ function precarregarPreload() {
     this.load.setPreloadSprite(preloadBar);
 
     slider = new phaseSlider(game); 
-    
-    //videos
-    game.load.video('libras1', 'assets/videoslibras/libras1.mp4');
-    //game.load.video('libras2', 'assets/videoslibras/libras2.mp4');
 
     //move btns
     game.load.spritesheet('moveLeft','assets/ui/moveLeft.png',65, 59);
@@ -35,7 +31,6 @@ function precarregarPreload() {
     game.load.image('btnSettings', 'assets/ui/btnSettings.png');
     game.load.image('hearBtn', 'assets/ui/hearBtn.png');
     game.load.image('btnSettings', 'assets/ui/btnSettings.png');
-    game.load.image('btnFacebook', 'assets/ui/btnFacebook.png');
     game.load.image('levelFailed', 'assets/ui/levelFailed.png');
     game.load.image('levelSuccess', 'assets/ui/levelSuccess.png');
     game.load.image('btnRestart', 'assets/ui/btnRestart.png');
@@ -58,6 +53,7 @@ function precarregarPreload() {
     game.load.spritesheet("btnComoJogar", "assets/ui/btnComoJogar.png", 240, 79, 2);
     game.load.spritesheet("btnControles", "assets/ui/btnControles.png", 240, 79, 2);
     game.load.spritesheet("btnEtapa2", "assets/ui/btnEtapa2.png", 240, 79, 2);
+    game.load.spritesheet("prosseguirBtn", "assets/ui/prosseguirBtn.png", 240, 79, 2);
     game.load.image("comoJogarModal", "assets/ui/comoJogarModal.png");
     game.load.spritesheet("instrucoesModalConteudos", "assets/ui/instrucoesModalConteudos.png",615, 293, 3);
 
@@ -207,8 +203,8 @@ function precarregarPreload() {
 
     //celulas
     game.load.image('celulaProcarionte','assets/celulas/celulaProcarionte.png');
-    game.load.image('celulaAnimal','assets/celulas/celulAnimal.png');
-    game.load.image('celulaVegetal','assets/celulas/celulavegetal.png');
+    game.load.image('celulaAnimal','assets/celulas/celulaAnimal.png');
+    game.load.image('celulaVegetal','assets/celulas/celulaVegetal.png');
     game.load.image('placeholder','assets/celulas/placeholder.png');
 
     //dialogs
