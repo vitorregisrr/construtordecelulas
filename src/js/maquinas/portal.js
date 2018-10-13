@@ -14,6 +14,12 @@ var portal = {
         this.station.inputEnabled = true;
         this.station.events.onInputDown.add(portal.teleportar, this);
         this.permissao = false;
+
+        this.dialogo = game.add.image(-110, -155, 'dialogoPortal');
+        this.dialogo.scale.setTo(0.65, 0.65);
+        this.dialogo.alpha = 0;
+        this.station.addChild(this.dialogo);
+
     },
 
     teleportar: function(){

@@ -20,16 +20,17 @@ var gerador = {
         receptor.gen();
         this.body.addChild(receptor.body);
 
-        this.gerarBtn = game.add.button(1238, 525 + 392, 'gerarBtn', function(){
+        this.gerarBtn = game.add.button(1264, 525 + 392, 'gerarBtn', function(){
             if(Math.abs( (gerador.gerarBtn.x + 100) - alien.element.x) < 420 && Math.abs((gerador.gerarBtn.y + 100) - alien.element.y) < 200){
                 gerarOrganela();
             }
         }, this);
+
+        this.gerarBtn.anchor.setTo(0.5, 0.5);
         if (mobileAndTabletcheck()) {
-            this.gerarBtn.scale.setTo(1.8,1.8);
-            this.gerarBtn.x = 1215;
-            this.gerarBtn.y = 525 + 370;
-          }
+            this.gerarBtn.scale.setTo(1.5,1.5);
+            this.gerarBtn.y -= 10;
+        }
 
         var celula = celulaAtual.nome;
         if (celula == 'procarionte') {
@@ -119,6 +120,16 @@ var gerador = {
             });
         }
 
+        this.dialogo = game.add.image(105, -170, 'dialogoEscolha');
+        this.dialogo.scale.setTo(0.65, 0.65);
+        this.dialogo.alpha = 0;
+        this.body.addChild(this.dialogo);
+
+        this.dialogoOrganela = game.add.image(165, 90, 'dialogoOrganela');
+        this.dialogoOrganela.scale.setTo(0.65, 0.65);
+        this.dialogoOrganela.alpha = 0;
+        this.body.addChild(this.dialogoOrganela);
+        this.dialogoOrganela.bringToTop();
         alien.element.bringToTop();
     },
 

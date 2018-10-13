@@ -40,7 +40,7 @@ function createModals() {
             {
                 type: "image",
                 content: "prosseguirBtn",
-                offsetY: 265,
+                offsetY: 225,
                 offsetX: 292,
                 contentScale: 0.8,
                 callback: function () {
@@ -136,27 +136,29 @@ function createModals() {
                 contentScale: 1
             },
             {
-                type: "text",
+                type: "text", //acertos
                 content: "0",
-                fontSize: 40,
+                fontSize: 35,
                 fontFamily: "Rajdhani",
-                color: "0xd9d9d9",
-                offsetY: -87,
-                offsetX: 100,
+                color: "0x7ed2f6",
+                stroke: "7ed2f6",
+                offsetY: 55,
+                offsetX: -70,
             },
             {
-                type: "text",
+                type: "text", //erros
                 content: "0",
-                fontSize: 40,
+                fontSize: 35,
                 fontFamily: "Rajdhani",
-                color: "0xd9d9d9",
-                offsetY: -7,
-                offsetX: 100,
+                color: "0x7ed2f6",
+                stroke: "7ed2f6",
+                offsetY: 115,
+                offsetX: -70,
             },
             {
                 type: "image",
                 content: "btnRestart",
-                offsetY: 160,
+                offsetY: 200,
                 offsetX: 0,
                 callback: function () {
                     game.paused = false;
@@ -166,7 +168,7 @@ function createModals() {
             {
                 type: "image",
                 content: "btnLeft",
-                offsetY: 145,
+                offsetY: 185,
                 offsetX: -80,
                 callback: function () {
                     game.paused = false;
@@ -177,13 +179,13 @@ function createModals() {
                 type: "sprite",
                 content: "starsSpritesheet",
                 frame: 2,
-                offsetY: 65,
-                offsetX: 0,
+                offsetY: 110,
+                offsetX: 160,
             },
             {
                 type: "image",
                 content: "btnRight",
-                offsetY: 145,
+                offsetY: 185,
                 offsetX: 80,
                 callback: function () {
                     game.paused = false;
@@ -202,8 +204,8 @@ function createModals() {
                 color: "0x7ed2f6",
                 stroke: "7ed2f6",
                 strokeThickness: 1,
-                offsetY: -142,
-                offsetX: 53,
+                offsetY: 57,
+                offsetX: 190,
             },
         ]
     });
@@ -379,8 +381,8 @@ function createModals() {
                 fontSize: 40,
                 fontFamily: "Rajdhani",
                 color: "0xd9d9d9",
-                offsetY: -87,
-                offsetX: 100,
+                offsetY: 75,
+                offsetX: 210,
             },
             {
                 type: "text",
@@ -388,13 +390,13 @@ function createModals() {
                 fontSize: 40,
                 fontFamily: "Rajdhani",
                 color: "0xd9d9d9",
-                offsetY: -7,
-                offsetX: 100,
+                offsetY: 75,
+                offsetX: -60,
             },
             {
                 type: "image",
                 content: "btnRestart",
-                offsetY: 100,
+                offsetY: 170,
                 contentScale: 1.3,
                 offsetX: 60,
                 callback: function () {
@@ -405,7 +407,7 @@ function createModals() {
             {
                 type: "image",
                 content: "btnLeft",
-                offsetY: 95,
+                offsetY: 160,
                 contentScale: 1.3,
                 offsetX: -30,
                 callback: function () {

@@ -58,7 +58,7 @@ var predator = {
     },
 
     attack: function (e) {
-        if (!predator.montado && !predator.dead) {
+        if (!predator.montado && !predator.dead && !alien.element.dead) {
             if (Math.abs(alien.element.x - e.x) < 550 && e.body.velocity.x == 0) {
 
                 e.bullet = e.bulletsGroup.getFirstDead();
@@ -136,7 +136,7 @@ var predator = {
 
     },
     followPlayer: function () {
-        if (!predator.montado && !predator.dead) {
+        if (!predator.montado && !predator.dead && !alien.element.dead) {
             var e = predator.body;
             e.speed = 90; //speed fix
             // Se a distância entre o inimigo e algum player estiver entre 380 e 200

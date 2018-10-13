@@ -83,7 +83,7 @@ var alien = {
             textHp.setText(alien.element.hp);
         }
 
-        if (this.element.hp <= 0) {
+        if (this.element.hp <= 0 && !this.element.dead) {
             this.element.dead = true;
             this.element.animations.play('die', 10, false);
             alien.canAttack = false;

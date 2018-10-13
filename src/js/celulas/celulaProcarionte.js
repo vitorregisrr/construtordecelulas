@@ -5,6 +5,10 @@ var celulaProcarionte = {
         this.body = game.add.sprite(200, 90, 'celulaProcarionte');
         this.body.scale.setTo(0.4, 0.4);
         alien.element.bringToTop();
+
+        this.dialogo = game.add.image(750, 650, 'dialogoEncaixe');
+        this.dialogo.scale.setTo(0.65, 0.65);
+        this.dialogo.alpha = 0;
     },
 
     respostas: [6, 3, 0, 1, 2, 5, 4],
@@ -39,6 +43,15 @@ var celulaProcarionte = {
 
     check: function () {
         if(organelas.numeroEncaixados >= this.numeroOrganelas){
+            //dialogo
+            game.add.tween(portal.dialogo).to({
+                alpha: 7
+            }, 600, Phaser.Easing.Linear.None, true);
+
+            game.add.tween(reator.dialogoGere).to({
+                alpha: 0
+            }, 600, Phaser.Easing.Linear.None, true);
+
             organelas.checked = true;
             portal.permissao = true;
             portal.sinalizador.frame = 0;

@@ -5,6 +5,12 @@ var receptor = {
 
         this.body.animations.add('pegar', [3,2,1,0]);
         this.body.animations.add('voltar', [0,1,2,3,4]);
+
+        this.dialogo = game.add.image(-130, -80, 'dialogoReceptor');
+        this.dialogo.scale.setTo(0.65, 0.65);
+        this.dialogo.alpha = 0;
+        this.body.addChild(this.dialogo);
+
     },
     play: function(animacao){
         switch(animacao){

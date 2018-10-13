@@ -7,6 +7,10 @@ var celulaVegetal = {
         this.body.scale.setTo(0.38, 0.38);
         //this.alavancaGen();
         alien.element.bringToTop();
+
+        this.dialogo = game.add.image(750, 540, 'dialogoEncaixe');
+        this.dialogo.scale.setTo(0.65, 0.65);
+        this.dialogo.alpha = 0;
     },
 
     alavancaGen: function(){
@@ -37,7 +41,7 @@ var celulaVegetal = {
         for (x = 0; x <= this.posicoes.length - 1; x++) {
             var sprite = game.add.sprite(this.posicoes[x][0], this.posicoes[x][1], 'placeholder');
             sprite.anchor.setTo(0.5, 0.5);
-            sprite.alpha = 0;
+            sprite.alpha = 1;
             sprite.posicao = x;
             this.placeholders.add(sprite);
             text = game.add.text(this.posicoes[x][0], this.posicoes[x][1], x, {
@@ -49,6 +53,16 @@ var celulaVegetal = {
 
     check: function () {
         if(organelas.numeroEncaixados >= this.numeroOrganelas){
+            
+            //dialogo
+            game.add.tween(portal.dialogo).to({
+                alpha: 7
+            }, 600, Phaser.Easing.Linear.None, true);
+
+            game.add.tween(reator.dialogoGere).to({
+                alpha: 0
+            }, 600, Phaser.Easing.Linear.None, true);
+            
             organelas.checked = true;
             portal.permissao = true;
             portal.sinalizador.frame = 0;

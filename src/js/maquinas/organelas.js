@@ -20,7 +20,7 @@ var organelas = {
             this.last.kill();
             alien.grabing = false;
         }
-        
+
         this.last = game.add.button(x, y, 'blocoorganela' + celulaAtual.nome + id, organelas.grab, this);
         this.efeitoCapturado = game.add.sprite(0, 0, 'organelaCapturada');
         this.efeitoCapturado.animations.add('fly');
@@ -46,6 +46,16 @@ var organelas = {
         this.efeitoCapturado.bringToTop();
         alien.element.bringToTop();
         gameUiBringtoTop();
+
+        //dialogo
+        game.add.tween(gerador.dialogoOrganela).to({
+            alpha: 0.7,
+        }, 600, Phaser.Easing.Linear.None, true);
+
+        //dialogo
+        game.add.tween(gerador.dialogo).to({
+            alpha: 0,
+        }, 600, Phaser.Easing.Linear.None, true);
     },
 
     grab: function (e) {
@@ -53,7 +63,7 @@ var organelas = {
             //condição se não estiver montado
             alien.animating = true;
             sounds.play('catch');
-            
+
             alien.element.animations.play('grabing', 12, false);
             game.time.events.add(900, function () {
                 alien.animating = false;
@@ -82,6 +92,23 @@ var organelas = {
                 game.add.tween(e).to({
                     alpha: 1
                 }, 900, Phaser.Easing.Linear.None, true);
+
+                //dialogo
+                game.add.tween(gerador.dialogoOrganela).to({
+                    alpha: 0
+                }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(reator.dialogoCapture).to({
+                    alpha: 0
+                }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(naveEspacial.dialogo).to({
+                    alpha: 0.7
+                }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(celulaAtual.dialogo).to({
+                    alpha: 0.7
+                }, 600, Phaser.Easing.Linear.None, true);
 
             }, this).autoDestroy = true;
         } else {
@@ -140,8 +167,22 @@ var organelas = {
                     y: 1
                 }, 600, Phaser.Easing.Linear.None, true);
                 gameUiBringtoTop();
+
+                //dialogo
+                game.add.tween(reator.dialogoGere).to({
+                    alpha: 7
+                }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(celulaAtual.dialogo).to({
+                    alpha: 0
+                }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(naveEspacial.dialogo).to({
+                    alpha: 0
+                }, 600, Phaser.Easing.Linear.None, true);
+
             }
-            if(celulaAtual.numeroOrganelas == organelas.numeroEncaixados){
+            if (celulaAtual.numeroOrganelas == organelas.numeroEncaixados) {
                 celulaAtual.check();
             }
         }

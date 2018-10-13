@@ -1,9 +1,9 @@
 var energia = {
-    gen: function(){
-        if(this.body){
+    gen: function () {
+        if (this.body) {
             this.body.destroy();
         }
-    
+
         this.body = game.add.button(230, 950 + 120, 'energia', this.grab, this);
         reator.body.animations.play('open', 12, false);
         this.noReceptor = true;
@@ -14,11 +14,11 @@ var energia = {
         this.efeitoCapturado.scale.setTo(1.2, 1.2);
         this.efeitoCapturado.alpha = 0;
         this.efeitoCapturado.animations.add('fly');
-        this.efeitoCapturado.animations.play('fly',8, true);
+        this.efeitoCapturado.animations.play('fly', 8, true);
         this.body.addChild(this.efeitoCapturado);
 
         //animacao de gerar
-        this.body.scale.setTo(0,0);
+        this.body.scale.setTo(0, 0);
         this.body.alpha = 0;
         this.body.anchor.setTo(0.5, 0.5);
         game.add.tween(this.body.scale).to({
@@ -38,9 +38,19 @@ var energia = {
 
         alien.element.bringToTop();
         gameUiBringtoTop();
+
+        //dialogos
+        game.add.tween(reator.dialogoGere).to({
+            alpha: 0
+        }, 600, Phaser.Easing.Linear.None, true);
+
+        game.add.tween(reator.dialogoCapture).to({
+            alpha: 0.7
+        }, 600, Phaser.Easing.Linear.None, true);
+
     },
 
-    grab: function(e){
+    grab: function (e) {
         if (Math.abs(alien.element.x - e.x) < 300 && Math.abs(alien.element.y - e.y) < 300 && !e.encaixado) {
             alien.animating = true;
             sounds.play('catch');
@@ -69,21 +79,31 @@ var energia = {
                 alien.element.frame = 3;
                 alien.grabing = 'energia';
                 this.grabing = e;
-                if(this.noReceptor){
+                if (this.noReceptor) {
                     energia.noReceptor = false;
-                    reator.body.animations.play('close',12,false);
+                    reator.body.animations.play('close', 12, false);
                     reator.painel.frame = 0;
                     sounds.play('reator');
                 }
+
+                //dialogo
+                game.add.tween(receptor.dialogo).to({
+                    alpha: 0.7
+                }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(reator.dialogoCapture).to({
+                    alpha: 0
+                }, 600, Phaser.Easing.Linear.None, true);
+
             }, this).autoDestroy = true;
         }
     },
 
-    drop: function(){
+    drop: function () {
         var pointer = game.input.activePointer;
         e = this.grabing;
 
-        if ((Math.abs( (pointer.x + game.camera.x) - alien.element.x) < 300 && Math.abs((pointer.y + game.camera.y) - alien.element.y) < 300)) {
+        if ((Math.abs((pointer.x + game.camera.x) - alien.element.x) < 300 && Math.abs((pointer.y + game.camera.y) - alien.element.y) < 300)) {
             sounds.play('catch');
             alien.animating = true;
             alien.element.animations.play('grabing', 12, false);
@@ -106,13 +126,23 @@ var energia = {
                     alpha: 0
                 }, 400, Phaser.Easing.Linear.None, true);
 
-                if(checkReceptorOverlap(this.grabing, receptor.body)){
+                if (checkReceptorOverlap(this.grabing, receptor.body)) {
                     this.grabing = false;
                     gerador.body.addChild(this.body);
                     this.body.x = 63
                     this.body.y = 190;
                     receptor.body.bringToTop();
                     this.body.encaixado = true;
+
+                    //dialogo 
+                    game.add.tween(gerador.dialogo).to({
+                        alpha: 0.7,
+                    }, 600, Phaser.Easing.Linear.None, true);
+
+                    game.add.tween(receptor.dialogo).to({
+                        alpha: 0,
+                    }, 600, Phaser.Easing.Linear.None, true);
+
                 }
 
             }, this).autoDestroy = true;

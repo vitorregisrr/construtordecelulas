@@ -6,10 +6,15 @@ var celulaAnimal = {
         this.body.scale.setTo(0.5, 0.5);
         alien.element.bringToTop();
         this.placeholders = game.add.group();
+
+        this.dialogo = game.add.image(630, 660, 'dialogoEncaixe');
+        this.dialogo.scale.setTo(0.65, 0.65);
+        this.dialogo.alpha = 0;
+
     },
 
-    alavancaGen: function(){
-        this.alavanca = game.add.button(600, 605, 'iBtn', function(){
+    alavancaGen: function () {
+        this.alavanca = game.add.button(600, 605, 'iBtn', function () {
             celulaAnimal.check();
         });
     },
@@ -31,7 +36,7 @@ var celulaAnimal = {
             [993, 440],
             [1098, 586],
             [1200, 383],
-        
+
         ];
         for (x = 0; x <= this.posicoes.length - 1; x++) {
             var sprite = game.add.sprite(this.posicoes[x][0], this.posicoes[x][1], 'placeholder');
@@ -47,23 +52,33 @@ var celulaAnimal = {
     },
 
     check: function () {
-        if(organelas.numeroEncaixados >= this.numeroOrganelas){
+        if (organelas.numeroEncaixados >= this.numeroOrganelas) {
+
+            //dialogo
+            game.add.tween(portal.dialogo).to({
+                alpha: 7
+            }, 600, Phaser.Easing.Linear.None, true);
+
+            game.add.tween(reator.dialogoGere).to({
+                alpha: 0
+            }, 600, Phaser.Easing.Linear.None, true);
+
             organelas.checked = true;
             portal.permissao = true;
             portal.sinalizador.frame = 0;
-            for(x = 0; x <= organelas.encaixados.length - 1; x++){
-                if(this.placeholders.getAt(x).id == this.respostas[x] ){
+            for (x = 0; x <= organelas.encaixados.length - 1; x++) {
+                if (this.placeholders.getAt(x).id == this.respostas[x]) {
                     organelas.encaixados[x].frame = 1;
                     organelas.acertos++;
                     textCerto.setText(organelas.acertos);
-                }else{
+                } else {
                     organelas.encaixados[x].frame = 2;
                     organelas.erros++;
                     textErrado.setText(organelas.erros);
                 }
             }
         }
-    
+
     }
 }
 
@@ -75,7 +90,7 @@ function checkPlaceholderOverlap() {
 
     var x = false;
     celulaAtual.placeholders.forEach(function (e) {
-        if(!x){
+        if (!x) {
             if (Phaser.Rectangle.intersects(organela, e)) {
                 overlapControl = true;
                 placeOverlaped = e;

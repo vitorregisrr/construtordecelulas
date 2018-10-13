@@ -16,6 +16,11 @@ var naveEspacial = {
         this.body.inputEnabled = true;
         this.body.events.onInputDown.add(naveEspacial.montar, this);
 
+        this.dialogo = game.add.image(-100, -110, 'dialogoNave');
+        this.dialogo.scale.setTo(0.8, 0.8);
+        this.dialogo.alpha = 0;
+        this.body.addChild(this.dialogo);
+
     },
     montar: function () {
         if (alien.canMove) {
@@ -35,6 +40,11 @@ var naveEspacial = {
                         alien.element.body.velocity.y = 0;
                     }, 100);
                     gameUiBringtoTop();
+                    
+                    //dialogo
+                    game.add.tween(naveEspacial.dialogo).to({
+                        alpha: 0
+                    }, 600, Phaser.Easing.Linear.None, true);
                 }
             } else {
                 game.add.existing(alien.element);
