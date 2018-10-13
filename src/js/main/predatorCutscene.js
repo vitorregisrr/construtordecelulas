@@ -1,8 +1,8 @@
 predatorCutscene1 = function () {
-    
+
     topStatistics.alpha = 0;
     game.camera.y += 300;
-
+    joystick.alpha = 0;
     predator.montado = false;
     alien.canMove = false;
     alien.canAttack = false;
@@ -58,6 +58,11 @@ predatorCutscene1 = function () {
                 alpha: 1,
             }, 2000, Phaser.Easing.Linear.None, true);
 
+            
+            game.add.tween(joystick).to({
+                alpha: 0.6,
+            }, 2000, Phaser.Easing.Linear.None, true);
+            
             game.time.events.add(1500, function () {
                 naveEspacialPredator.montar();
                 predator.body.bringToTop();
