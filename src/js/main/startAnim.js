@@ -26,7 +26,7 @@ var startAnim = function () {
                 }, 2000, Phaser.Easing.Linear.None, true);
 
                 game.add.tween(joystick).to({
-                    alpha: 1,
+                    alpha: 0.6,
                 }, 2000, Phaser.Easing.Linear.None, true);
 
                 alien.canAttack = true;
