@@ -41,7 +41,7 @@ var celulaVegetal = {
         for (x = 0; x <= this.posicoes.length - 1; x++) {
             var sprite = game.add.sprite(this.posicoes[x][0], this.posicoes[x][1], 'placeholder');
             sprite.anchor.setTo(0.5, 0.5);
-            sprite.alpha = 1;
+            sprite.alpha = 0;
             sprite.posicao = x;
             this.placeholders.add(sprite);
             text = game.add.text(this.posicoes[x][0], this.posicoes[x][1], x, {

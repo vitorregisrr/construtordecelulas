@@ -8,21 +8,16 @@ var screenHeight = window.innerHeight
 || document.body.clientHeight;
 
 
-if(screenHeight > 1200){
-    screenHeight = 1200;
-}else if(screenHeight < 700){
-    screenHeight = 700;
-}
-
 screenWidth = 1430;
+screenHeight = 700;
 var centerX = screenWidth/2;
 var centerY = screenHeight/2;
 
 var game;
 if (mobileAndTabletcheck()) {
-    game = new Phaser.Game(screenWidth, 700, Phaser.CANVAS, '#game',null, true);
+    game = new Phaser.Game(screenWidth, screenHeight, Phaser.CANVAS, '#game',null, true);
 }else{
-    game = new Phaser.Game(screenWidth, 700, Phaser.AUTO, '#game',null, true);
+    game = new Phaser.Game(screenWidth, screenHeight, Phaser.AUTO, '#game',null, true);
 }
 
 //plugins
