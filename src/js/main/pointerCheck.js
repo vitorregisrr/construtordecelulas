@@ -43,7 +43,7 @@ function checkGerarBtnOverlap() {
     var pointer = game.input.mousePointer;
     var overlapControl;
     if (gerador.gerarBtn) {
-        if (!(Math.abs((pointer.x + game.camera.x) - gerador.gerarBtn.x - 40) < 100 && Math.abs((pointer.y + game.camera.y) - gerador.gerarBtn.y) < 80)) {
+        if (!(Math.abs((pointer.x + game.camera.x) - gerador.gerarBtn.x) < 150 && Math.abs((pointer.y + game.camera.y) - gerador.gerarBtn.y) < 80)) {
             overlapControl = true;
         } else {
             overlapControl = false;

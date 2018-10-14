@@ -252,7 +252,9 @@ function questaoEnviada(){
         reator.painel.frame = 2;
         controleQuestao.index[8] = true;
         numeroAcertos++;
+        sounds.play('right');
     }else{
         reator.painel.frame = 1;
+        sounds.play('wrong');
     }
 }

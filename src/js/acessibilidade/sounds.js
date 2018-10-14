@@ -1,100 +1,89 @@
+var sfx;
 var sounds = {
     gen: function () {
         if (config.sounds) {
-            this.hurt = game.add.audio('hurt');
-            this.attack = game.add.audio('attack');
-            this.right = game.add.audio('right');
-            this.catch = game.add.audio('catch');
-            this.receptor = game.add.audio('receptor');
-            this.shock = game.add.audio('shock');
-            this.ambiente = game.add.audio('ambiente');
-            this.reator = game.add.audio('reator');
-            this.ambiente.volume = 0.06;
-
-            this.mutScream = game.add.audio('mutScream');
-            this.boxChange = game.add.audio('boxChange');
-
-            this.predatorDie = game.add.audio('predatorDie');
-            this.predatorVoice = game.add.audio('predatorVoice');
-            this.predatorAttacked = game.add.audio('predatorAttacked');
-
-            this.boxChange.volume = 0.2;
+            sfx = game.add.audioSprite('sfx');
+            sfx.allowMultiple = true;
         }
-
     },
 
     play: function (id) {
         if (config.sounds) {
             switch (id) {
                 case 'change':
-                    this.change.play();
+                    sfx.play('change');
                     break;
 
                 case 'reator':
-                    this.reator.play();
+                    sfx.play('reator');
                     break;
 
                 case 'predatorVoice':
-                    this.predatorVoice.play();
+                    sfx.play('predatorVoice');
+
                     break;
 
                 case 'predatorAttacked':
-                    this.predatorAttacked.play();
+                    sfx.play('predatorAttacked');
+
                     break;
 
                 case 'predatorDie':
-                    this.predatorDie.play();
+                    sfx.play('predatorDie');
+
                     break;
 
                 case 'shock':
-                    this.shock.play();
+                    sfx.play('shock');
+
                     break;
 
                 case 'receptor':
-                    this.receptor.play();
+                    sfx.play('receptor');
+
                     break;
 
                 case 'ambiente':
-                    this.ambiente.play();
+                    sfx.play('ambiente', 0.06);
                     break;
 
                 case 'catch':
-                    this.catch.play();
+                    sfx.play('catch');
+
                     break;
 
                 case 'boxChange':
-                    this.boxChange.play();
+                    sfx.play('boxChange');
+
                     break;
 
                 case 'fall':
-                    this.fall.play();
+                    sfx.play('fall');
+
                     break;
 
                 case 'attack':
-                    this.attack.play();
+                    sfx.play('attack');
+
                     break;
 
                 case 'hurt':
-                    this.hurt.play();
+                    sfx.play('hurt');
+
                     break;
 
                 case 'angry':
-                    this.angry.play();
+                    sfx.play('angry');
+
                     break;
 
                 case 'right':
-                    this.right.play();
-                    break;
-
-                case 'mutScream':
-                    this.mutScream.play();
-                    break;
-
-                case 'mutAttack':
+                    sfx.play('right');
 
                     break;
 
-                case 'mutDie':
+                case 'wrong':
+                    sfx.play('wrong', 0.03);
 
                     break;
 

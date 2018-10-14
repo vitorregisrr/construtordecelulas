@@ -1,0 +1,75 @@
+{
+  "resources": [
+    "sprite.ogg",
+    "sprite.m4a",
+    "sprite.mp3",
+    "sprite.ac3"
+  ],
+  "spritemap": {
+    "ambiente": {
+      "start": 0,
+      "end": 45.06122448979592,
+      "loop": false
+    },
+    "attack": {
+      "start": 47,
+      "end": 48.41061224489796,
+      "loop": false
+    },
+    "catch": {
+      "start": 50,
+      "end": 51.56734693877551,
+      "loop": false
+    },
+    "fx_mixdown": {
+      "start": 53,
+      "end": 72.93142857142857,
+      "loop": false
+    },
+    "hurt": {
+      "start": 74,
+      "end": 76.06367346938775,
+      "loop": false
+    },
+    "predatorAttacked": {
+      "start": 78,
+      "end": 79.09714285714286,
+      "loop": false
+    },
+    "predatorDie": {
+      "start": 81,
+      "end": 84.47428571428571,
+      "loop": false
+    },
+    "predatorVoice": {
+      "start": 86,
+      "end": 92.50448979591837,
+      "loop": false
+    },
+    "reator": {
+      "start": 94,
+      "end": 95.07102040816326,
+      "loop": false
+    },
+    "receptor": {
+      "start": 97,
+      "end": 97.88816326530612,
+      "loop": false
+    },
+    "right": {
+      "start": 99,
+      "end": 99.99265306122449,
+      "loop": false
+    },
+    "shock": {
+      "start": 101,
+      "end": 102.25387755102041,
+      "loop": false
+    },
+    "wrong": {
+      "start": 104,
+      "end": 106.82122448979592,
+      "loop": false
+    }
+  }
+}
