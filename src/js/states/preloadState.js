@@ -152,6 +152,9 @@ function precarregarPreload() {
     game.load.image('dialogoPortal', 'assets/dialog/dialogoPortal.png');
     game.load.image('dialogoReceptor', 'assets/dialog/dialogoReceptor.png');
     game.load.image('dialogoOrganela', 'assets/dialog/dialogoOrganela.png');
+    game.load.image('dialogoSuba', 'assets/dialog/dialogoSuba.png');
+    game.load.image('dialogoSair', 'assets/dialog/dialogoSair.png');
+    game.load.image('dialogoProteja', 'assets/dialog/dialogoProteja.png');
 
     //organelas
     game.load.image('organelaprocarionte0', 'assets/gerador/organelaprocarionte0.png');

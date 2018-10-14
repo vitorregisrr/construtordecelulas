@@ -21,6 +21,11 @@ var naveEspacial = {
         this.dialogo.alpha = 0;
         this.body.addChild(this.dialogo);
 
+        this.dialogoSair = game.add.image(30, -80, 'dialogoSair');
+        this.dialogoSair.scale.setTo(0.6, 0.6);
+        this.dialogoSair.alpha = 0;
+        this.body.addChild(this.dialogoSair);
+
     },
     montar: function () {
         if (alien.canMove) {
@@ -40,7 +45,7 @@ var naveEspacial = {
                         alien.element.body.velocity.y = 0;
                     }, 100);
                     gameUiBringtoTop();
-                    
+
                     //dialogo
                     game.add.tween(naveEspacial.dialogo).to({
                         alpha: 0
@@ -55,6 +60,17 @@ var naveEspacial = {
                 gameUiBringtoTop();
                 this.body.body.velocity.x = 0;
                 this.body.body.velocity.y = 0;
+
+                //dialogo
+                if (naveEspacial.dialogoSair.alpha > 0) {
+                    game.add.tween(naveEspacial.dialogoSair).to({
+                        alpha: 0
+                    }, 400, Phaser.Easing.Linear.None, true);
+
+                    game.add.tween(reator.dialogoGere).to({
+                        alpha: 0.7
+                    }, 400, Phaser.Easing.Linear.None, true);
+                }
             }
         }
     }

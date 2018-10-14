@@ -110,6 +110,10 @@ var organelas = {
                     alpha: 0.7
                 }, 600, Phaser.Easing.Linear.None, true);
 
+                game.add.tween(gerador.dialogoSuba).to({
+                    alpha: 0.7
+                }, 600, Phaser.Easing.Linear.None, true);
+
             }, this).autoDestroy = true;
         } else {
             console.log('mt longe')
@@ -170,7 +174,7 @@ var organelas = {
 
                 //dialogo
                 game.add.tween(reator.dialogoGere).to({
-                    alpha: 7
+                    alpha: 0.7
                 }, 600, Phaser.Easing.Linear.None, true);
 
                 game.add.tween(celulaAtual.dialogo).to({
@@ -180,6 +184,11 @@ var organelas = {
                 game.add.tween(naveEspacial.dialogo).to({
                     alpha: 0
                 }, 600, Phaser.Easing.Linear.None, true);
+
+                game.add.tween(gerador.dialogoSuba).to({
+                    alpha: 0
+                }, 600, Phaser.Easing.Linear.None, true);
+
 
             }
             if (celulaAtual.numeroOrganelas == organelas.numeroEncaixados) {

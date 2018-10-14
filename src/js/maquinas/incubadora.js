@@ -23,5 +23,11 @@
         }
        
         incubadora.body.bringToTop();
+
+        this.dialogoProteja = game.add.image(40, -100, 'dialogoProteja');
+        this.dialogoProteja.scale.setTo(0.65, 0.65);
+        this.dialogoProteja.alpha = 0.5;
+        this.body.addChild(this.dialogoProteja);
+        this.dialogoProteja.bringToTop();
      }
  } 

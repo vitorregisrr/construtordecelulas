@@ -31,7 +31,7 @@ var reator = {
 
         this.dialogoGere = game.add.image(0, -130, 'dialogoGere');
         this.dialogoGere.scale.setTo(0.65, 0.65);
-        this.dialogoGere.alpha = 0.7;
+        this.dialogoGere.alpha = 0;
         this.body.addChild(this.dialogoGere);
 
         this.dialogoCapture = game.add.image(150, 20, 'dialogoCapture');

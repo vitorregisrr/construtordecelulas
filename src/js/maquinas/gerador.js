@@ -130,6 +130,13 @@ var gerador = {
         this.dialogoOrganela.alpha = 0;
         this.body.addChild(this.dialogoOrganela);
         this.dialogoOrganela.bringToTop();
+
+        this.dialogoSuba = game.add.image(-300, -100, 'dialogoSuba');
+        this.dialogoSuba.scale.setTo(0.65, 0.65);
+        this.dialogoSuba.alpha = 0;
+        this.body.addChild(this.dialogoSuba);
+        this.dialogoSuba.bringToTop();
+
         alien.element.bringToTop();
     },
 

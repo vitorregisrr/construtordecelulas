@@ -31,6 +31,12 @@ var startAnim = function () {
 
                 alien.canAttack = true;
                 alien.canMove = true;
+
+                //dialogo
+                game.add.tween(naveEspacial.dialogoSair).to({
+                    alpha: 0.7
+                }, 900, Phaser.Easing.Linear.None, true);
+
             }, this).autoDestroy = true;
         }, this).autoDestroy = true;
     }, this).autoDestroy = true;
