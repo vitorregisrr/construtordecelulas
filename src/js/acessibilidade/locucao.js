@@ -1,13 +1,13 @@
 var locucao = {
     gen: function () {
-        if (config.locucao) {
+        if (config.locucao && !mobileAndTabletcheck) {
             this.sprite = game.add.audioSprite('locucao');
             this.sprite.allowMultiple = true;
         }
     },
 
     call: function (id1) {
-        if (config.locucao) {
+        if (config.locucao && !mobileAndTabletcheck) {
             this.play(id1);
         }
     },

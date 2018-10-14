@@ -10,7 +10,7 @@ function precarregarPreload() {
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
     this.game.scale.refresh();
-    
+
     /*var logo = game.add.sprite(game.world.centerX , game.world.centerY - 120 , 'logo');
     logo.enableBody = true;
     logo.anchor.x = 0.5;
@@ -100,10 +100,11 @@ function precarregarPreload() {
     game.load.spritesheet('mutante1Bullet', 'assets/bullets/mutante1Bullet.png', 60, 45, 8);
     game.load.spritesheet('alienBullet', 'assets/bullets/alienBullet.png');
 
-    //audiom4a
     game.load.audiosprite('sfx', ['assets/audios/sfx/spriteJson/sprite.ogg', 'assets/audios/sfx/spriteJson/sprite.m4a'], null, sfxJson);
-    game.load.audiosprite('locucao', ['assets/audios/locucao/spriteJson/sprite.ogg', 'assets/audios/locucao/spriteJson/sprite.m4a'], null, locucaoJson);
-
+    if (!mobileAndTabletcheck) {
+        //audios locucao
+        game.load.audiosprite('locucao', ['assets/audios/locucao/spriteJson/sprite.ogg', 'assets/audios/locucao/spriteJson/sprite.m4a'], null, locucaoJson);
+    }
     //efeitos
     game.load.spritesheet('explosion', 'assets/efeitos/explosion.png', 160, 160, 9);
     game.load.spritesheet('efeitoraio', 'assets/efeitos/efeitoraio.png', 300, 187, 13);
