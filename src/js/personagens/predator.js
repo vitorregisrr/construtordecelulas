@@ -99,10 +99,10 @@ var predator = {
             e.dead = true;
             game.time.events.remove(predatorVoiceLoop);
             sounds.play('predatorDie');
-            game.time.events.add(300, function () {
+            setTimeout(() => {
                 predator.body.body.velocity.x = 0;
-            }, this);
-
+            }, 300);
+            predator.body.immovable = true;
             game.time.events.add(2000, function () {
                 levelSuccess();
             });

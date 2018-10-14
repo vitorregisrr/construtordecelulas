@@ -130,7 +130,7 @@ var questoes = [
         [ //Citoplasmsa
             [ //questao 1
                 "Marque a alternativa que contém as estruturas celulas presentes no citoplasma de uma célula procarionte:",
-                "Vacúolo, cloropasto, complexo golgiense, núcleo",
+                "Vacúolo, cloroplasto, complexo golgiense, núcleo",
                 "Ribossomo, DNA, RNA e proteínas",
                 "Peroxissomos, mitocôndrias, centríolos e lisossomos",
                 "Mitocôndrias, retículo endoplasmático, complexo golgiese e lisossomos",
@@ -322,7 +322,7 @@ var questoes = [
                 "citoesqueleto",
                 "complexo de Golgi",
                 4,
-                'animalcomplexodegolgi0',
+                'animalcomplexogolgiense0',
                 false
             ],
 
@@ -334,7 +334,7 @@ var questoes = [
                 "Complexo de Golgi",
                 "Retículo endoplasmático",
                 3,
-                'animalcomplexodegolgi1',
+                'animalcomplexogolgiense1',
                 false
             ]
         ],
@@ -400,7 +400,7 @@ var questoes = [
                 "Maturar proteínas",
                 "Excretar proteínas",
                 0,
-                'animalribossomo0',
+                'animalribossomos0',
                 false
             ],
 
@@ -412,7 +412,7 @@ var questoes = [
                 "lisossomos",
                 "centríolos",
                 2,
-                'animalribossomo1',
+                'animalribossomos1',
                 false
             ]
         ],
@@ -452,7 +452,7 @@ var questoes = [
                 "Ribossomos",
                 "Peroxissomos",
                 0,
-                'animalcentriolos0',
+                'animalcentriolo0',
                 false
             ],
 
@@ -464,7 +464,7 @@ var questoes = [
                 "Produção de proteínas",
                 "Maturação de proteínas",
                 0,
-                'animalcentriolos1',
+                'animalcentriolo1',
                 false
             ]
         ],
@@ -504,7 +504,7 @@ var questoes = [
                 "o Citoplasma",
                 "a membrana plasmática",
                 0,
-                'animalperoxissomo0',
+                'animalnucleo0',
                 false
             ],
 
@@ -516,7 +516,7 @@ var questoes = [
                 "Procariontes",
                 "Heterotróficas",
                 1,
-                'animalperoxissomo1',
+                'animalnucleo1',
                 false
             ]
         ],
@@ -560,7 +560,7 @@ var questoes = [
                 "Mitocôndria",
                 "Peroxissomo",
                 2,
-                'vegetalcloropasto0',
+                'vegetalcloroplasto0',
                 false
             ],
 
@@ -572,7 +572,7 @@ var questoes = [
                 "Fotossíntese",
                 "Transpiração",
                 3,
-                'vegetalcloropasto1',
+                'vegetalcloroplasto1',
                 false
             ]
         ],
@@ -690,7 +690,7 @@ var questoes = [
                 "excreção celular",
                 "secreção celular",
                 4,
-                'vegetalcomplexodegolgi0',
+                'vegetalcomplexogolgiense0',
                 false
             ],
 
@@ -702,7 +702,7 @@ var questoes = [
                 "D",
                 "E",
                 3,
-                'vegetalcomplexodegolgi1',
+                'vegetalcomplexogolgiense1',
                 false
             ]
         ],

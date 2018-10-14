@@ -88,6 +88,7 @@ var alien = {
             this.element.animations.play('die', 10, false);
             alien.canAttack = false;
             alien.canMove = false;
+            alien.element.immovable = true;
             game.time.events.add(2000, function () {
                 gameOver();
             });

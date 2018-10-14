@@ -1,24 +1,25 @@
 var sounds = {
     gen: function () {
-        this.hurt = game.add.audio('hurt');
-        this.attack = game.add.audio('attack');
-        this.right = game.add.audio('right');
-        this.catch = game.add.audio('catch');
-        this.receptor = game.add.audio('receptor');
-        this.shock = game.add.audio('shock');
-        this.ambiente = game.add.audio('ambiente');
-        this.reator = game.add.audio('reator');
-        this.ambiente.volume = 0.06;
+        if (config.sounds) {
+            this.hurt = game.add.audio('hurt');
+            this.attack = game.add.audio('attack');
+            this.right = game.add.audio('right');
+            this.catch = game.add.audio('catch');
+            this.receptor = game.add.audio('receptor');
+            this.shock = game.add.audio('shock');
+            this.ambiente = game.add.audio('ambiente');
+            this.reator = game.add.audio('reator');
+            this.ambiente.volume = 0.06;
 
-        this.mutScream = game.add.audio('mutScream');
-        this.boxChange = game.add.audio('boxChange');
+            this.mutScream = game.add.audio('mutScream');
+            this.boxChange = game.add.audio('boxChange');
 
-        this.predatorDie = game.add.audio('predatorDie');
-        this.predatorVoice = game.add.audio('predatorVoice');
-        this.predatorAttacked = game.add.audio('predatorAttacked');
+            this.predatorDie = game.add.audio('predatorDie');
+            this.predatorVoice = game.add.audio('predatorVoice');
+            this.predatorAttacked = game.add.audio('predatorAttacked');
 
-        this.boxChange.volume = 0.2;
-
+            this.boxChange.volume = 0.2;
+        }
 
     },
 
@@ -37,7 +38,7 @@ var sounds = {
                     this.predatorVoice.play();
                     break;
 
-                 case 'predatorAttacked':
+                case 'predatorAttacked':
                     this.predatorAttacked.play();
                     break;
 

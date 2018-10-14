@@ -130,6 +130,78 @@ function precarregarPreload() {
     game.load.audio('procarionteribossomo0', ['assets/audios/acessibilidade/procarionteribossomo0.ogg', 'assets/audios/acessibilidade/procarionteribossomo0.m4a']);
     game.load.audio('procarionteribossomo1', ['assets/audios/acessibilidade/procarionteribossomo1.ogg', 'assets/audios/acessibilidade/procarionteribossomo1.m4a']);
 
+    game.load.audio('procarionteribossomo0', ['assets/audios/acessibilidade/procarionteribossomo0.ogg', 'assets/audios/acessibilidade/procarionteribossomo0.m4a']);
+    game.load.audio('procarionteribossomo1', ['assets/audios/acessibilidade/procarionteribossomo1.ogg', 'assets/audios/acessibilidade/procarionteribossomo1.m4a']);
+
+    game.load.audio('animalcitoesqueleto0', ['assets/audios/acessibilidade/animalcitoesqueleto0.ogg', 'assets/audios/acessibilidade/animalcitoesqueleto0.m4a']);
+    game.load.audio('animalcitoesqueleto1', ['assets/audios/acessibilidade/animalcitoesqueleto1.ogg', 'assets/audios/acessibilidade/animalcitoesqueleto1.m4a']);
+
+    game.load.audio('animalribossomos0', ['assets/audios/acessibilidade/animalribossomos0.ogg', 'assets/audios/acessibilidade/animalribossomos0.m4a']);
+    game.load.audio('animalribossomos1', ['assets/audios/acessibilidade/animalribossomos1.ogg', 'assets/audios/acessibilidade/animalribossomos1.m4a']);
+
+    game.load.audio('animallisossomo0', ['assets/audios/acessibilidade/animallisossomo0.ogg', 'assets/audios/acessibilidade/animallisossomo0.m4a']);
+    game.load.audio('animallisossomo1', ['assets/audios/acessibilidade/animallisossomo1.ogg', 'assets/audios/acessibilidade/animallisossomo1.m4a']);
+
+    game.load.audio('animalnucleo0', ['assets/audios/acessibilidade/animalnucleo0.ogg', 'assets/audios/acessibilidade/animalnucleo0.m4a']);
+    game.load.audio('animalnucleo1', ['assets/audios/acessibilidade/animalnucleo1.ogg', 'assets/audios/acessibilidade/animalnucleo1.m4a']);
+
+    game.load.audio('animalreticuloendoplasmatico0', ['assets/audios/acessibilidade/animalreticuloendoplasmatico0.ogg', 'assets/audios/acessibilidade/animalreticuloendoplasmatico0.m4a']);
+    game.load.audio('animalreticuloendoplasmatico1', ['assets/audios/acessibilidade/animalreticuloendoplasmatico1.ogg', 'assets/audios/acessibilidade/animalreticuloendoplasmatico1.m4a']);
+
+    game.load.audio('animalcomplexogolgiense0', ['assets/audios/acessibilidade/animalcomplexogolgiense0.ogg', 'assets/audios/acessibilidade/animalcomplexogolgiense0.m4a']);
+    game.load.audio('animalcomplexogolgiense1', ['assets/audios/acessibilidade/animalcomplexogolgiense1.ogg', 'assets/audios/acessibilidade/animalcomplexogolgiense1.m4a']);
+
+    game.load.audio('animalmembranaplasmatica0', ['assets/audios/acessibilidade/animalmembranaplasmatica0.ogg', 'assets/audios/acessibilidade/animalmembranaplasmatica0.m4a']);
+    game.load.audio('animalmembranaplasmatica1', ['assets/audios/acessibilidade/animalmembranaplasmatica1.ogg', 'assets/audios/acessibilidade/animalmembranaplasmatica1.m4a']);
+
+    game.load.audio('animalperoxissomo0', ['assets/audios/acessibilidade/animalperoxissomo0.ogg', 'assets/audios/acessibilidade/animalperoxissomo0.m4a']);
+    game.load.audio('animalperoxissomo1', ['assets/audios/acessibilidade/animalperoxissomo1.ogg', 'assets/audios/acessibilidade/animalperoxissomo1.m4a']);
+    
+    game.load.audio('animalcentriolo0', ['assets/audios/acessibilidade/animalcentriolo0.ogg', 'assets/audios/acessibilidade/animalcentriolo0.m4a']);
+    game.load.audio('animalcentriolo1', ['assets/audios/acessibilidade/animalcentriolo1.ogg', 'assets/audios/acessibilidade/animalcentriolo1.m4a']);
+
+    game.load.audio('animalmitocondria0', ['assets/audios/acessibilidade/animalmitocondria0.ogg', 'assets/audios/acessibilidade/animalmitocondria0.m4a']);
+    game.load.audio('animalmitocondria1', ['assets/audios/acessibilidade/animalmitocondria1.ogg', 'assets/audios/acessibilidade/animalmitocondria1.m4a']);
+
+    game.load.audio('animalcitoplasma0', ['assets/audios/acessibilidade/animalcitoplasma0.ogg', 'assets/audios/acessibilidade/animalcitoplasma0.m4a']);
+    game.load.audio('animalcitoplasma1', ['assets/audios/acessibilidade/animalcitoplasma1.ogg', 'assets/audios/acessibilidade/animalcitoplasma1.m4a']);
+
+    game.load.audio('vegetalnucleo0', ['assets/audios/acessibilidade/vegetalnucleo0.ogg', 'assets/audios/acessibilidade/vegetalnucleo0.m4a']);
+    game.load.audio('vegetalnucleo1', ['assets/audios/acessibilidade/vegetalnucleo1.ogg', 'assets/audios/acessibilidade/vegetalnucleo1.m4a']);
+    
+    game.load.audio('vegetalvacuolo0', ['assets/audios/acessibilidade/vegetalvacuolo0.ogg', 'assets/audios/acessibilidade/vegetalvacuolo0.m4a']);
+    game.load.audio('vegetalvacuolo1', ['assets/audios/acessibilidade/vegetalvacuolo1.ogg', 'assets/audios/acessibilidade/vegetalvacuolo1.m4a']);
+    
+    game.load.audio('vegetalmembranaplasmatica0', ['assets/audios/acessibilidade/vegetalmembranaplasmatica0.ogg', 'assets/audios/acessibilidade/vegetalmembranaplasmatica0.m4a']);
+    game.load.audio('vegetalmembranaplasmatica1', ['assets/audios/acessibilidade/vegetalmembranaplasmatica1.ogg', 'assets/audios/acessibilidade/vegetalmembranaplasmatica1.m4a']);
+
+    game.load.audio('vegetalmitocondria0', ['assets/audios/acessibilidade/vegetalmitocondria0.ogg', 'assets/audios/acessibilidade/vegetalmitocondria0.m4a']);
+    game.load.audio('vegetalmitocondria1', ['assets/audios/acessibilidade/vegetalmitocondria1.ogg', 'assets/audios/acessibilidade/vegetalmitocondria1.m4a']);
+
+    game.load.audio('vegetalcloroplasto0', ['assets/audios/acessibilidade/vegetalcloroplasto0.ogg', 'assets/audios/acessibilidade/vegetalcloroplasto0.m4a']);
+    game.load.audio('vegetalcloroplasto1', ['assets/audios/acessibilidade/vegetalcloroplasto1.ogg', 'assets/audios/acessibilidade/vegetalcloroplasto1.m4a']);
+
+    game.load.audio('vegetalparedecelular0', ['assets/audios/acessibilidade/vegetalparedecelular0.ogg', 'assets/audios/acessibilidade/vegetalparedecelular0.m4a']);
+    game.load.audio('vegetalparedecelular1', ['assets/audios/acessibilidade/vegetalparedecelular1.ogg', 'assets/audios/acessibilidade/vegetalparedecelular1.m4a']);
+
+    game.load.audio('vegetalcomplexogolgiense0', ['assets/audios/acessibilidade/vegetalcomplexogolgiense0.ogg', 'assets/audios/acessibilidade/vegetalcomplexogolgiense0.m4a']);
+    game.load.audio('vegetalcomplexogolgiense1', ['assets/audios/acessibilidade/vegetalcomplexogolgiense1.ogg', 'assets/audios/acessibilidade/vegetalcomplexogolgiense1.m4a']);
+
+    game.load.audio('vegetalcitoesqueleto0', ['assets/audios/acessibilidade/vegetalcitoesqueleto0.ogg', 'assets/audios/acessibilidade/vegetalcitoesqueleto0.m4a']);
+    game.load.audio('vegetalcitoesqueleto1', ['assets/audios/acessibilidade/vegetalcitoesqueleto1.ogg', 'assets/audios/acessibilidade/vegetalcitoesqueleto1.m4a']);
+
+    game.load.audio('vegetalcitoplasma0', ['assets/audios/acessibilidade/vegetalcitoplasma0.ogg', 'assets/audios/acessibilidade/vegetalcitoplasma0.m4a']);
+    game.load.audio('vegetalcitoplasma1', ['assets/audios/acessibilidade/vegetalcitoplasma1.ogg', 'assets/audios/acessibilidade/vegetalcitoplasma1.m4a']);
+
+    game.load.audio('vegetalperoxissomo0', ['assets/audios/acessibilidade/vegetalperoxissomo0.ogg', 'assets/audios/acessibilidade/vegetalperoxissomo0.m4a']);
+    game.load.audio('vegetalperoxissomo1', ['assets/audios/acessibilidade/vegetalperoxissomo1.ogg', 'assets/audios/acessibilidade/vegetalperoxissomo1.m4a']);
+
+    game.load.audio('vegetalribossomos0', ['assets/audios/acessibilidade/vegetalribossomos0.ogg', 'assets/audios/acessibilidade/vegetalribossomos0.m4a']);
+    game.load.audio('vegetalribossomos1', ['assets/audios/acessibilidade/vegetalribossomos1.ogg', 'assets/audios/acessibilidade/vegetalribossomos1.m4a']);
+
+    game.load.audio('vegetalreticuloendoplasmatico0', ['assets/audios/acessibilidade/vegetalreticuloendoplasmatico0.ogg', 'assets/audios/acessibilidade/vegetalreticuloendoplasmatico0.m4a']);
+    game.load.audio('vegetalreticuloendoplasmatico1', ['assets/audios/acessibilidade/vegetalreticuloendoplasmatico1.ogg', 'assets/audios/acessibilidade/vegetalreticuloendoplasmatico1.m4a']);
+    
     //posicoes
     game.load.audio('posicao1', ['assets/audios/acessibilidade/posicao1.ogg', 'assets/audios/acessibilidade/posicao1.m4a']);
     game.load.audio('posicao2', ['assets/audios/acessibilidade/posicao2.ogg', 'assets/audios/acessibilidade/posicao2.m4a']);
