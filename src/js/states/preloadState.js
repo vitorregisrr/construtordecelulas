@@ -108,7 +108,7 @@ function precarregarPreload() {
     game.load.audio('predatorVoice', ['assets/audios/predatorVoice.ogg', 'assets/audios/predatorVoice.m4a']);
     game.load.audio('predatorAttacked', ['assets/audios/predatorAttacked.ogg', 'assets/audios/predatorAttacked.m4a']);
 
-    //audios locucao
+   /* //audios locucao
     game.load.audio('procariontecapsula0', ['assets/audios/acessibilidade/procariontecapsula0.ogg', 'assets/audios/acessibilidade/procariontecapsula0.m4a']);
     game.load.audio('procariontecapsula1', ['assets/audios/acessibilidade/procariontecapsula1.ogg', 'assets/audios/acessibilidade/procariontecapsula1.m4a']);
 
@@ -201,7 +201,7 @@ function precarregarPreload() {
 
     game.load.audio('vegetalreticuloendoplasmatico0', ['assets/audios/acessibilidade/vegetalreticuloendoplasmatico0.ogg', 'assets/audios/acessibilidade/vegetalreticuloendoplasmatico0.m4a']);
     game.load.audio('vegetalreticuloendoplasmatico1', ['assets/audios/acessibilidade/vegetalreticuloendoplasmatico1.ogg', 'assets/audios/acessibilidade/vegetalreticuloendoplasmatico1.m4a']);
-    
+    */
     //posicoes
     game.load.audio('posicao1', ['assets/audios/acessibilidade/posicao1.ogg', 'assets/audios/acessibilidade/posicao1.m4a']);
     game.load.audio('posicao2', ['assets/audios/acessibilidade/posicao2.ogg', 'assets/audios/acessibilidade/posicao2.m4a']);
