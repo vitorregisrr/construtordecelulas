@@ -52,6 +52,7 @@ function precarregarPreload() {
     game.load.image("pausedModal", "assets/ui/pausedModal.png");
     game.load.image("configModal", "assets/ui/configModal.png");
     game.load.image("modalQuizz", "assets/ui/modalQuizz.png");
+    game.load.image("modalQuizzMobile", "assets/ui/modalQuizzMobile.png");
     game.load.image("btnOk", "assets/ui/btnOk.png");
     game.load.image("comoJogarModal", "assets/ui/comoJogarModal.png");
     game.load.image("startModal", "assets/ui/startModal.png");
