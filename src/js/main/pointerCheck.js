@@ -62,7 +62,7 @@ function checkReatorBtnOverlap() {
     var pointer = game.input.mousePointer;
     var overlapControl;
     if (reator.gerarBtn) {
-        if (!(Math.abs((pointer.x + game.camera.x) - reator.gerarBtn.x - 30) < 50 && Math.abs((pointer.y + game.camera.y) - reator.gerarBtn.y) < 20)) {
+        if (!(Math.abs((pointer.x + game.camera.x) - reator.gerarBtn.x - 50) < 90 && Math.abs((pointer.y + game.camera.y) - reator.gerarBtn.y) < 20)) {
             overlapControl = true;
         } else {
             overlapControl = false;
