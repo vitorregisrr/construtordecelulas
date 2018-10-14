@@ -44,7 +44,7 @@ var sounds = {
                     break;
 
                 case 'ambiente':
-                    sfx.play('ambiente', 0.06);
+                    sfx.play('ambiente', 0.08);
                     break;
 
                 case 'catch':
@@ -63,7 +63,7 @@ var sounds = {
                     break;
 
                 case 'attack':
-                    sfx.play('attack');
+                    sfx.play('attack', 0.05);
 
                     break;
 

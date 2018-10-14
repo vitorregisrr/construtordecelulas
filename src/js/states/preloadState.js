@@ -5,10 +5,12 @@ var preloadState = {
 var slider;
 
 function precarregarPreload() {
+    game.scale.fullScreenScaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     game.scale.pageAlignHorizontally = true;
     game.scale.pageAlignVertically = true;
-
+    this.game.scale.refresh();
+    
     /*var logo = game.add.sprite(game.world.centerX , game.world.centerY - 120 , 'logo');
     logo.enableBody = true;
     logo.anchor.x = 0.5;

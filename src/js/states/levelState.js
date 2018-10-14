@@ -26,6 +26,7 @@ var levels;
 function criarLevelState() {
 	createModals();
 	game.sound.stopAll();
+	this.game.scale.refresh();
 	if(soundLoop){
 		clearInterval(soundLoop);
 	}
