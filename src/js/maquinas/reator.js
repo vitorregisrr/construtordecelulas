@@ -15,10 +15,7 @@ var reator = {
         }); // nao da pra usar o add child por causa do pointer check
 
         this.gerarBtn.anchor.setTo(0.5, 0.5);
-        if (mobileAndTabletcheck()) {
-            this.gerarBtn.scale.setTo(1.5,1.5);
-            this.gerarBtn.y -= 10;
-        }
+
         this.painel = game.add.sprite(44, 137, 'reatorPainel');
         this.painel.frame = 0;
         this.painel.inputEnabled = true;
@@ -38,6 +35,12 @@ var reator = {
         this.dialogoCapture.scale.setTo(0.6, 0.6);
         this.dialogoCapture.alpha = 0;
         this.body.addChild(this.dialogoCapture);
+
+        if (mobileAndTabletcheck()) {
+            this.gerarBtn.scale.setTo(1.5,1.5);
+            this.gerarBtn.y -= 10;
+            this.dialogoGere.y -= 15;
+        }
     },
 
     gerarEnergia: function () {

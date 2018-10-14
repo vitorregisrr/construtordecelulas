@@ -33,7 +33,7 @@ function createQuizzModal() {
                     type: "sprite",
                     content: "onoffscifi",
                     offsetY: -2,
-                    offsetX: 290,
+                    offsetX: 230,
                     frame: 0,
                     contentScale: 0.7,
                     callback: function (e) {
@@ -44,7 +44,7 @@ function createQuizzModal() {
                     type: "sprite",
                     content: "onoffscifi",
                     offsetY: 40,
-                    offsetX: 290,
+                    offsetX: 230,
                     contentScale: 0.7,
                     callback: function (e) {
                         alternativaMarcada(1);
@@ -54,7 +54,7 @@ function createQuizzModal() {
                     type: "sprite",
                     content: "onoffscifi",
                     offsetY: 88,
-                    offsetX: 290,
+                    offsetX: 230,
                     contentScale: 0.7,
                     callback: function (e) {
                         alternativaMarcada(2);
@@ -64,7 +64,7 @@ function createQuizzModal() {
                     type: "sprite",
                     content: "onoffscifi",
                     offsetY: 133,
-                    offsetX: 290,
+                    offsetX: 230,
                     contentScale: 0.7,
                     callback: function (e) {
                         alternativaMarcada(3);
@@ -75,7 +75,7 @@ function createQuizzModal() {
                     content: "onoffscifi",
                     contentScale: 0.7,
                     offsetY: 177,
-                    offsetX: 290,
+                    offsetX: 230,
                     contentScale: 0.7,
                     callback: function (e) {
                         alternativaMarcada(4);
@@ -325,7 +325,7 @@ function createQuizzModal() {
                     align: 'left',
                     fontSize: 30,
                     content: "Alternativa 5",
-                    offsetY: 220,
+                    offsetY: 230,
                     offsetX: -80,
 
                     callback: function (e) {

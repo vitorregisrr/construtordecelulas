@@ -64,6 +64,7 @@ function precarregarPreload() {
     game.load.spritesheet("btnEtapa2", "assets/ui/btnEtapa2.png", 240, 79, 2);
     game.load.spritesheet("prosseguirBtn", "assets/ui/prosseguirBtn.png", 240, 79, 2);
     game.load.spritesheet("instrucoesModalConteudos", "assets/ui/instrucoesModalConteudos.png", 615, 293, 3);
+    game.load.spritesheet('gerarBtn', 'assets/ui/gerarBtn.png', 120, 40, 2);
 
     game.load.spritesheet("onoffscifi", "assets/ui/onoffscifi.png", 40, 33);
     game.load.image("enviarscifiBtn", "assets/ui/enviarscifiBtn.png");
@@ -119,7 +120,6 @@ function precarregarPreload() {
     game.load.image('placareator', 'assets/gerador/placareator.png');
     game.load.image('placagerador', 'assets/gerador/placagerador.png');
 
-    game.load.image('gerarBtn', 'assets/gerador/gerarBtn.png');
     game.load.spritesheet('receptorEnergia', 'assets/gerador/receptorEnergia.png', 101, 130, 5);
     game.load.spritesheet("energia", "assets/gerador/energia.png", 80, 73, 11);
     game.load.spritesheet("reator", "assets/gerador/reator.png", 266, 260, 8);
