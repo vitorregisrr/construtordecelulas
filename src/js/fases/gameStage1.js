@@ -74,13 +74,23 @@ function atualizarState1() {
     alien.move();
 
     if (reator.gerarBtn.input.pointerOver()) {
-		reator.gerarBtn.frame = 1;
+        reator.gerarBtn.frame = 1;
+        if(mobileAndTabletcheck()){
+            setTimeout(() => {
+                reator.gerarBtn.frame = 0;
+            }, 300);
+        }
 	} else {
-		reator.gerarBtn.frame = 0;
+        reator.gerarBtn.frame = 0;
     }
     
     if (gerador.gerarBtn.input.pointerOver()) {
-		gerador.gerarBtn.frame = 1;
+        gerador.gerarBtn.frame = 1;
+        if(mobileAndTabletcheck()){
+            setTimeout(() => {
+                gerador.gerarBtn.frame = 0;
+            }, 300);
+        }
 	} else {
 		gerador.gerarBtn.frame = 0;
 	}

@@ -325,7 +325,7 @@ function createQuizzModal() {
                     align: 'left',
                     fontSize: 30,
                     content: "Alternativa 5",
-                    offsetY: 230,
+                    offsetY: 25,
                     offsetX: -80,
 
                     callback: function (e) {
