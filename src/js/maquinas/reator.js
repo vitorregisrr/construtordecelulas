@@ -9,6 +9,12 @@ var reator = {
         this.body.addChild(this.placa);
 
         this.gerarBtn = game.add.button(92, 950 + -30, 'gerarBtn', function () {
+            if (mobileAndTabletcheck()) {
+                reator.gerarBtn.frame = 1;
+                setTimeout(() => {
+                    reator.gerarBtn.frame = 0;
+                }, 250);
+            }
             if (Math.abs((reator.gerarBtn.x + 100) - alien.element.x) < 220 && Math.abs((reator.gerarBtn.y + 100) - alien.element.y) < 150) {
                 reator.gerarEnergia();
             }

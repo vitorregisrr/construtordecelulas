@@ -21,6 +21,12 @@ var gerador = {
         this.body.addChild(receptor.body);
 
         this.gerarBtn = game.add.button(1264, 525 + 392, 'gerarBtn', function(){
+            if (mobileAndTabletcheck()) {
+                gerador.gerarBtn.frame = 1;
+                setTimeout(() => {
+                    gerador.gerarBtn.frame = 0;
+                }, 250);
+            }
             if(Math.abs( (gerador.gerarBtn.x + 100) - alien.element.x) < 420 && Math.abs((gerador.gerarBtn.y + 100) - alien.element.y) < 200){
                 gerarOrganela();
             }
@@ -41,7 +47,7 @@ var gerador = {
             var organela4 = game.add.image(0, 0, 'organela' + celula + '4');
             var organela5 = game.add.image(0, 0, 'organela' + celula + '5');
             var organela6 = game.add.image(0, 0, 'organela' + celula + '6');
-            this.slider = slider.createSlider({
+            slideGerador = slider.createSlider({
                 customSliderBG: false,
                 mode: "horizontal",
                 sliderBGAlpha: 0.8,
@@ -71,7 +77,7 @@ var gerador = {
             var organela8 = game.add.image(0, 0, 'organela' + celula + '8');
             var organela9 = game.add.image(0, 0, 'organela' + celula + '9');
             var organela10 = game.add.image(0, 0, 'organela' + celula + '10');
-            this.slider = slider.createSlider({
+            slideGerador = slider.createSlider({
                 customSliderBG: false,
                 mode: "horizontal",
                 sliderBGAlpha: 0.8,
@@ -100,7 +106,7 @@ var gerador = {
             var organela7 = game.add.image(0, 0, 'organela' + celula + '7');
             var organela8 = game.add.image(0, 0, 'organela' + celula + '8');
             var organela9 = game.add.image(0, 0, 'organela' + celula + '9');
-            this.slider = slider.createSlider({
+            slideGerador = slider.createSlider({
                 customSliderBG: false,
                 mode: "horizontal",
                 sliderBGAlpha: 0.8,
@@ -120,6 +126,10 @@ var gerador = {
             });
         }
 
+        if(mobileAndTabletcheck()){
+            slider.scaleSlider(2,2);
+        }
+        
         this.dialogo = game.add.image(105, -170, 'dialogoEscolha');
         this.dialogo.scale.setTo(0.65, 0.65);
         this.dialogo.alpha = 0;

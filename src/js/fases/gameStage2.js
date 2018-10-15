@@ -70,6 +70,20 @@ function criarState2() {
 function atualizarState2() {
     plataformas.collide();
     alien.move();
+
+    if (!mobileAndTabletcheck()) {
+        if (reator.gerarBtn.input.pointerOver()) {
+            reator.gerarBtn.frame = 1;
+        } else {
+            reator.gerarBtn.frame = 0;
+        }
+
+        if (gerador.gerarBtn.input.pointerOver()) {
+            gerador.gerarBtn.frame = 1;
+        } else {
+            gerador.gerarBtn.frame = 0;
+        }
+    }
 }
 
 function render() {

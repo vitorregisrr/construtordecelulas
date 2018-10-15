@@ -12,8 +12,8 @@ function criarState3() {
     locucao.gen();
     sounds.gen();
     celulaAtual = celulaVegetal;
-
     levelNumber = 3;
+    
     game.physics.startSystem(Phaser.Physics.ARCADE);
     cursors = game.input.keyboard.createCursorKeys();
     upButton = game.input.keyboard.addKey(Phaser.Keyboard.W);
@@ -70,6 +70,20 @@ function criarState3() {
 function atualizarState3() {
     plataformas.collide();
     alien.move();
+
+    if (!mobileAndTabletcheck()) {
+        if (reator.gerarBtn.input.pointerOver()) {
+            reator.gerarBtn.frame = 1;
+        } else {
+            reator.gerarBtn.frame = 0;
+        }
+
+        if (gerador.gerarBtn.input.pointerOver()) {
+            gerador.gerarBtn.frame = 1;
+        } else {
+            gerador.gerarBtn.frame = 0;
+        }
+    }
 }
 
 function render() {

@@ -194,6 +194,7 @@ function precarregarPreload() {
 
     //quadrinhos
     game.load.image('quadrinho1', 'assets/quadrinhos/quadrinho1.png');
+    game.load.image('quadrinho2', 'assets/quadrinhos/quadrinho2.png');
 
     //blocos
     game.load.spritesheet('blocoorganelaprocarionte0', 'assets/gerador/blocoorganelaprocarionte0.png', 91, 30, 3);

@@ -5,6 +5,7 @@ var levelState = {
 
 //local storage progress stars array
 var starsArray, timeArray, btnComoJogar;
+
 if (!localStorage.starsArray) {
 	starsArray = [0, 4, 4];
 	localStorage.setItem('starsArray', JSON.stringify(starsArray));
@@ -22,11 +23,13 @@ if (!localStorage.timeArray) {
 } else {
 	timeArray = JSON.parse(localStorage.timeArray);
 }
+
 var levels;
 function criarLevelState() {
 	createModals();
 	game.sound.stopAll();
 	this.game.scale.refresh();
+
 	if(soundLoop){
 		clearInterval(soundLoop);
 	}
@@ -43,6 +46,7 @@ function criarLevelState() {
 	for (x = 0; x < 3; x++) {
 		var a = x + 1;
 		level[x] = game.add.button(pl[x][0], pl[x][1], 'level' + a + 'bg', thumbClicked, this);
+
 		var e = level[x];
 		e.levelNumber = x + 1;
 		e.stars = game.add.image(130, 380, 'levels');
@@ -61,9 +65,8 @@ function criarLevelState() {
 
 		//desbloqueia o proximo nivel caso o anterior esteja liberado
 		if ((starsArray[x - 1] >= 1 && starsArray[x - 1] != 4) && (starsArray[x] == 0 || starsArray[x] == 4)) {
-
 			starsArray[x] = 0;
-			//é jogavel
+			console.log(true);
 		}
 
 		e.stars.frame = starsArray[e.levelNumber - 1];

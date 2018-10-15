@@ -5,6 +5,7 @@ var gameState1 = {
 };
 
 var rna, dna, chao, numeroOrganelas, celulaAtual, quadrinho;
+
 function criarState1() {
     createModals();
     createQuizzModal();
@@ -29,7 +30,7 @@ function criarState1() {
         [00],
         [00]
     ];
-    
+
     //gerando o bg
     var bg = game.add.sprite(0, 0, 'background1');
     var labbg = game.add.sprite(0, 870, 'labbackground');
@@ -60,11 +61,11 @@ function criarState1() {
 
     //portal
     portal.gen(1260, 620);
-    
+
     //ui
     gameUI();
     topStatistics.bringToTop();
-    
+
     //animacao do zoom 
     startAnim();
 }
@@ -73,28 +74,19 @@ function atualizarState1() {
     plataformas.collide();
     alien.move();
 
-    if (reator.gerarBtn.input.pointerOver()) {
-        reator.gerarBtn.frame = 1;
-        if(mobileAndTabletcheck()){
-            setTimeout(() => {
-                reator.gerarBtn.frame = 0;
-            }, 300);
+    if (!mobileAndTabletcheck()) {
+        if (reator.gerarBtn.input.pointerOver()) {
+            reator.gerarBtn.frame = 1;
+        } else {
+            reator.gerarBtn.frame = 0;
         }
-	} else {
-        reator.gerarBtn.frame = 0;
+
+        if (gerador.gerarBtn.input.pointerOver()) {
+            gerador.gerarBtn.frame = 1;
+        } else {
+            gerador.gerarBtn.frame = 0;
+        }
     }
-    
-    if (gerador.gerarBtn.input.pointerOver()) {
-        gerador.gerarBtn.frame = 1;
-        if(mobileAndTabletcheck()){
-            setTimeout(() => {
-                gerador.gerarBtn.frame = 0;
-            }, 300);
-        }
-	} else {
-		gerador.gerarBtn.frame = 0;
-	}
 }
 
-function render() {
-}
+function render() {}

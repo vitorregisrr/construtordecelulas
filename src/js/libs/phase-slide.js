@@ -523,6 +523,15 @@ phaseSlider = function(game) {
         refreshSlider: function() {
 
         },
+        scaleSlider: function(size){
+            _this.sliderControlsGroup.getAt(0).scale.setTo(size,size);
+            _this.sliderControlsGroup.getAt(1).scale.setTo(size,size);
+            _this.sliderControlsGroup.getAt(0).x += 5;
+            _this.sliderControlsGroup.getAt(1).x -= 25;
+            _this.sliderControlsGroup.y -= 20;
+            
+        },
+
         removeItemAt: function(index) {
             _this.sliderMainGroup.removeChildAt(index);
             _this.options._objects = _this.sliderMainGroup.children;

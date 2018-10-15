@@ -51,13 +51,10 @@ function levelSuccess() {
     timeArray[levelNumber-1][0] = timeArrayProvisorio[0];
     timeArray[levelNumber-1][1] = timeArrayProvisorio[1];
     timeArray[levelNumber-1][2] = timeArrayProvisorio[2];
-
-    localStorage.setItem('timeArray', JSON.stringify(timeArray));
-    
     game.paused = true;
     var starsSpritesheetIndex;
     //estrelas
-    if (starsArray[levelNumber - 1] < 3) {
+    if (starsArray[levelNumber - 1] < 3 || starsArray[levelNumber - 1] == 4) {
         if (organelas.erros == 0) {
             starsArray[levelNumber - 1] = 3;
             starsSpritesheetIndex = 2;
@@ -69,9 +66,9 @@ function levelSuccess() {
         } else {
             starsArray[levelNumber - 1] = 1;
             starsSpritesheetIndex = 0;
-
         }
         localStorage.setItem('starsArray', JSON.stringify(starsArray));
+        localStorage.setItem('timeArray', JSON.stringify(timeArray));
     }
 
     organelas.erros = organelas.erros.toString();

@@ -483,6 +483,7 @@ function showSobreModal() {
 
 function showQuadrinho(id) {
     game.paused = true;
+    reg.modal.updateModalValue('quadrinho'+id, 'quadrinhosModal', 2);
     reg.modal.showModal("quadrinhosModal");
 }
 

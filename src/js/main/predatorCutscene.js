@@ -67,6 +67,7 @@ predatorCutscene1 = function () {
                 naveEspacialPredator.montar();
                 predator.body.bringToTop();
                 alien.element.bringToTop();
+                gameUiBringtoTop();
             }, this);
 
         }, this);
