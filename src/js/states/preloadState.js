@@ -103,7 +103,7 @@ function precarregarPreload() {
     game.load.spritesheet('alienBullet', 'assets/bullets/alienBullet.png');
 
     game.load.audiosprite('sfx', ['assets/audios/sfx/spriteJson/sprite.ogg', 'assets/audios/sfx/spriteJson/sprite.m4a'], null, sfxJson);
-    if (!mobileAndTabletcheck) {
+    if (!mobileAndTabletcheck()) {
         //audios locucao
         game.load.audiosprite('locucao', ['assets/audios/locucao/spriteJson/sprite.ogg', 'assets/audios/locucao/spriteJson/sprite.m4a'], null, locucaoJson);
     }
