@@ -89,15 +89,6 @@ function mobileAndTabletcheck() {
 };
 
 function doOnOrientationChange() {
-    var screenWidth = window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-
-var screenHeight = window.innerHeight ||
-    document.documentElement.clientHeight ||
-    document.body.clientHeight;
-
-    
     game.width = screenWidth;
     game.height = screenHeight;
     game.scale.refresh();
