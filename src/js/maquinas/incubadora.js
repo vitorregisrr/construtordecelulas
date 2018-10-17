@@ -3,7 +3,7 @@
         this.body = game.add.sprite(600, 608, 'incubadora');
 
         switch (celulaAtual.nome) {
-            case '':
+            case 'procarionte':
                 var bacteria = game.add.sprite(incubadora.body.x + 90, incubadora.body.y + 30, 'bacteriaIncubadora');
                 bacteria.animations.add('effect');
                 bacteria.animations.play('effect', 8, true);
