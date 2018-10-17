@@ -89,10 +89,18 @@ function mobileAndTabletcheck() {
 };
 
 function doOnOrientationChange() {
+    var screenWidth = window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+var screenHeight = window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight;
+
+    
     game.width = screenWidth;
     game.height = screenHeight;
-    console.log('a');
     game.scale.refresh();
 }
 
-window.addEventListener('orientationchange', doOnOrientationChange);
+window.addEventListener('resize', doOnOrientationChange);
