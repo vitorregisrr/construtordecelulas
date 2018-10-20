@@ -11,10 +11,10 @@ function precarregarPreload() {
     game.scale.pageAlignVertically = true;
     this.game.scale.refresh();
 
-    /*var logo = game.add.sprite(game.world.centerX , game.world.centerY - 120 , 'logo');
+    var logo = game.add.sprite(game.world.centerX , game.world.centerY - 120 , 'logo');
     logo.enableBody = true;
     logo.anchor.x = 0.5;
-    logo.anchor.y = 0.5;*/
+    logo.anchor.y = 0.5;
 
     var preloadBarBg = game.add.sprite(centerX, game.world.centerY + 15, 'preloadBarBg');
     preloadBarBg.enableBody = true;

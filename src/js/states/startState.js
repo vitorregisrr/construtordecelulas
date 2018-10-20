@@ -5,14 +5,14 @@ function criarStart(){
     sobreBg.anchor.x = 0.5;
     sobreBg.anchor.y = 0.5;
 
-    /*var logo = game.add.sprite(game.world.centerX , game.world.centerY - 120 , 'logo');
+    var logo = game.add.sprite(centerX, game.world.centerY - 70 , 'logo');
     logo.enableBody = true;
     logo.anchor.x = 0.5;
-    logo.anchor.y = 0.5;*/
+    logo.anchor.y = 0.5;
 
     createModals();
 
-    btnPlay = game.add.button(centerX , game.world.centerY + 70, 'btnPlay');
+    btnPlay = game.add.button(centerX , game.world.centerY + 130, 'btnPlay');
     btnPlay.enableBody = true;
     btnPlay.anchor.x = 0.5;
     btnPlay.anchor.y = 0.5;
