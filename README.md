@@ -1,3 +1,6 @@
-# O Construtor de Células
-Jogo educacional de Biologia, para ajudar no ensino da matéria Estruturas Celulares.
-As instruções de cada fase estão na tela de níveis.
+# Jogo Incubadora Alien
+
+[Clique para jogar](https://vitorregisrr.github.io/biogamesstatic/materiais/incubadoraalien.html)
+
+Jogo educacional de Biologia, para ajudar no ensino da matéria Citologia.
+O resultado é salvo no navegador. 
