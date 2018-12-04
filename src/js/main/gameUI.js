@@ -84,7 +84,7 @@ function gameUI() {
     textErrado.fill = '#7ed2f6';
     topStatistics.addChild(textErrado);
     
-    joystick = game.add.sprite(1000, 445, '');
+    joystick = game.add.sprite(1140, 55, '');
     joystick.fixedToCamera = true;
     joystick.visible = false;
     joystick.scale.setTo(1.6,1.6);
@@ -110,7 +110,7 @@ function gameUI() {
     moveDownBtn.onInputUp.add(function() { moveDownBtn.isDown = false;}, this);
     joystick.addChild(moveDownBtn);
 
-    attackBtn = game.add.button(-centerX + 30, -40, 'btnAttack', function(){ alien.attack();}, this);
+    attackBtn = game.add.button(-centerX + 100, -40, 'btnAttack', function(){ alien.attack();}, this);
     attackBtn.onInputDown.add(function() { attackBtn.isDown = true;}, this);
     attackBtn.onInputUp.add(function() { attackBtn.isDown = false;}, this);
     attackBtn.scale.setTo(1.3,1.3);
