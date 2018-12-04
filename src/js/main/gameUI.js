@@ -84,7 +84,7 @@ function gameUI() {
     textErrado.fill = '#7ed2f6';
     topStatistics.addChild(textErrado);
     
-    joystick = game.add.sprite(1120, 555, '');
+    joystick = game.add.sprite(1110, 555, '');
     joystick.fixedToCamera = true;
     joystick.visible = false;
     joystick.scale.setTo(1.6,1.6);
